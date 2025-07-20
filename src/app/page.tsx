@@ -4,16 +4,18 @@ import AboutUs from '@/components/AboutUs'
 import Features from '@/components/Features'
 import Testimonials from '@/components/Testimonials'
 import Footer from '@/components/Footer'
+import WhatsAppFloat from '@/components/WhatsAppFloat';
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <main className="min-h-screen">
+    <>
       <Navbar />
       <Hero />
       <AboutUs/>
       <Features />
       <Testimonials />
       <Footer />
-    </main>
+      <WhatsAppFloat  />
+    </>
   )
 }

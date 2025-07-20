@@ -1,93 +1,93 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import {  useState } from 'react'
 import Image from 'next/image'
-
+import { motion, AnimatePresence } from 'framer-motion'
+import Link from 'next/link'
 const services = [
   {
     title: "Funeral Transportation",
-    description: "Respectful, private transportation for families and guests during funeral services.",
+    description: "Respectful, dignified transportation with utmost privacy for families during difficult times. Our professional chauffeurs ensure a seamless experience.",
     image: "/funeral.jpg",
-    delay: 0
+    category: "special",
+    features: ["Privacy partitions", "Flower arrangements available", "Spacious seating"]
   },
   {
     title: "Prom Limo Service",
-    description: "Safe, stylish prom night limo rides for students and groups.",
+    description: "Make prom night unforgettable with our luxury fleet. Safe, stylish rides with red carpet treatment for your special night.",
     image: "/prom.jpg",
-    delay: 100
+    category: "events",
+    features: ["LED mood lighting", "Champagne toast (non-alcoholic)", "Complimentary bottled water"]
   },
   {
-    title: "Quinceañera Limo Service",
-    description: "Elegant limo service to celebrate your daughter's special Quinceañera day.",
+    title: "Quinceanera Limo Service",
+    description: "Celebrate this milestone in elegance. Our white glove service ensures the birthday princess arrives in royal style.",
     image: "/Quinceanera.jpg",
-    delay: 200
+    category: "events",
+    features: ["Decorated vehicles available", "Professional photography stops", "Coordinated arrival timing"]
   },
   {
     title: "Wedding Limo Services",
-    description: "Wedding day transportation for couples, families, and bridal parties.",
+    description: "From the ceremony to the reception, our wedding packages provide flawless transportation for the entire bridal party.",
     image: "/wedding.jpg",
-    delay: 300
+    category: "wedding",
+    features: ["Bridal dressing area", "Just married decorations", "Coordinated timing"]
   },
   {
     title: "Wine Tours",
-    description: "Comfortable wine country tours with safe, stylish transportation included.",
+    description: "Sip in style with our Napa/Sonoma wine tour packages. Travel safely between vineyards in luxury vehicles with knowledgeable drivers.",
     image: "/wine.jpg",
-    delay: 400
+    category: "tours",
+    features: ["Custom itinerary planning", "Cooler storage for purchases", "Vineyard recommendations"]
   },
   {
     title: "Airport Transportation",
-    description: "Timely airport drop-offs and pickups with professional chauffeurs.",
+    description: "Punctual, professional airport transfers with flight tracking. Never worry about missing a flight or waiting for rides.",
     image: "/airport.jpg",
-    delay: 500
+    category: "corporate",
+    features: ["Flight monitoring", "Meet-and-greet service", "Luggage assistance"]
   },
   {
-    title: "Party Bus Service",
-    description: "Spacious, group-friendly party buses for celebrations and special occasions.",
-    image: "/limo2.jpg",
-    delay: 600
-  },
-  {
-    title: "Black Car Service",
-    description: "Reliable, discreet black car rides for business or private transportation.",
+    title: "Executive Black Car Service",
+    description: "Discreet, reliable transportation for business professionals. Arrive at meetings refreshed and prepared.",
     image: "/limo3.jpeg",
-    delay: 700
+    category: "corporate",
+    features: ["WiFi enabled", "Mobile office setup", "Newspaper/magazine selection"]
   },
   {
-    title: "Limo Service",
-    description: "Luxury limo service for events, business, or personal travel needs.",
+    title: "Luxury Limousine Service",
+    description: "Our signature service for any occasion. Choose from our fleet of premium vehicles for your special event.",
     image: "/limo4.jpg",
-    delay: 800
+    category: "premium",
+    features: ["Complementary refreshments", "Ambient lighting control", "Premium sound system"]
+  },
+  {
+    title: "Concert & Event Transportation",
+    description: "Avoid parking hassles and arrive in style at Bay Area venues. We'll get you there and back safely.",
+    image: "/limo9.jpg",
+    category: "events",
+    features: ["Late night availability", "Group pricing", "Designated pickup points"]
   }
 ]
 
+const categories = [
+  { name: "All", icon: "⭐" },
+  { name: "Wedding", icon: "💍" },
+  { name: "Corporate", icon: "💼" },
+  { name: "Events", icon: "🎉" },
+  { name: "Special", icon: "✨" },
+  { name: "Tours", icon: "🗺️" }
+]
+
 export default function Services() {
-  const [isVisible, setIsVisible] = useState(false)
   const [activeCategory, setActiveCategory] = useState('All')
   const [visibleCount, setVisibleCount] = useState(6)
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true)
-        }
-      },
-      { threshold: 0.1 }
-    )
-
-    const element = document.getElementById('services-section')
-    if (element) {
-      observer.observe(element)
-    }
-
-    return () => observer.disconnect()
-  }, [])
+  const [hoveredCard, setHoveredCard] = useState<number | null>(null)
 
   const filteredServices = activeCategory === 'All' 
     ? services 
     : services.filter(service => 
-        service.title.toLowerCase().includes(activeCategory.toLowerCase()) ||
-        service.description.toLowerCase().includes(activeCategory.toLowerCase())
+        service.category.toLowerCase() === activeCategory.toLowerCase()
       )
 
   const visibleServices = filteredServices.slice(0, visibleCount)
@@ -97,145 +97,173 @@ export default function Services() {
   }
 
   return (
-    <section id="services-section" className="relative py-20 overflow-hidden">
-      {/* 3D Effect Background */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-black via-black to-yellow-900 opacity-95"></div>
-        <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
-          <div className="relative w-full h-full">
-            {/* 3D Floating Elements */}
-            {[...Array(15)].map((_, i) => (
-              <div
-                key={i}
-                className="absolute rounded-full bg-yellow-500 opacity-10"
-                style={{
-                  width: `${Math.random() * 20 + 5}px`,
-                  height: `${Math.random() * 20 + 5}px`,
-                  top: `${Math.random() * 100}%`,
-                  left: `${Math.random() * 100}%`,
-                  animation: `float ${Math.random() * 10 + 10}s linear infinite`,
-                  animationDelay: `${Math.random() * 5}s`,
-                }}
-              />
-            ))}
-          </div>
-        </div>
+    <section className="relative py-10 overflow-hidden max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Floating decorative elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {[...Array(10)].map((_, i) => (
+          <motion.div
+            key={i}
+            className="absolute rounded-full bg-yellow-500 opacity-10"
+            initial={{
+              width: `${Math.random() * 20 + 5}px`,
+              height: `${Math.random() * 20 + 5}px`,
+              top: `${Math.random() * 100}%`,
+              left: `${Math.random() * 100}%`,
+            }}
+            animate={{
+              y: [0, -100, 0],
+              x: [0, 50, 100],
+              rotate: [0, 180, 360],
+            }}
+            transition={{
+              duration: Math.random() * 10 + 10,
+              repeat: Infinity,
+              ease: "linear",
+              delay: Math.random() * 5
+            }}
+          />
+        ))}
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <div className={`inline-block bg-yellow-500 text-black px-4 py-2 rounded-full text-sm font-semibold mb-6 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            Our Services
-          </div>
-          <h2 className={`text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            Premium Services <span className="text-yellow-400">Tailored for You</span>
-          </h2>
-          <p className={`text-lg text-yellow-200 max-w-3xl mx-auto transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            Cheery Limousine Worldwide sets the standard for luxury service by understanding the expectations of executives, providing journeys that respect your time, privacy, and reputation.
-          </p>
-        </div>
+      {/* Category Filters */}
+      <div className="flex flex-wrap justify-center gap-3 mb-16">
+        {categories.map((category) => (
+          <motion.button
+            key={category.name}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => {
+              setActiveCategory(category.name)
+              setVisibleCount(6)
+            }}
+            className={`flex items-center px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${
+              activeCategory === category.name
+                ? 'bg-yellow-500 text-black shadow-lg shadow-yellow-500/30'
+                : 'bg-black text-white border border-yellow-500/20 hover:border-yellow-500/50'
+            }`}
+          >
+            <span className="mr-2">{category.icon}</span>
+            {category.name}
+          </motion.button>
+        ))}
+      </div>
 
-        {/* Category Filters */}
-        <div className={`flex flex-wrap justify-center gap-3 mb-12 transition-all duration-1000 delay-600 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-          <button 
-            onClick={() => setActiveCategory('All')}
-            className={`px-4 py-2 rounded-full ${activeCategory === 'All' ? 'bg-yellow-500 text-black' : 'bg-black text-white border border-yellow-500/30'}`}
-          >
-            All Services
-          </button>
-          <button 
-            onClick={() => setActiveCategory('Wedding')}
-            className={`px-4 py-2 rounded-full ${activeCategory === 'Wedding' ? 'bg-yellow-500 text-black' : 'bg-black text-white border border-yellow-500/30'}`}
-          >
-            Wedding
-          </button>
-          <button 
-            onClick={() => setActiveCategory('Funeral')}
-            className={`px-4 py-2 rounded-full ${activeCategory === 'Funeral' ? 'bg-yellow-500 text-black' : 'bg-black text-white border border-yellow-500/30'}`}
-          >
-            Funeral
-          </button>
-          <button 
-            onClick={() => setActiveCategory('Prom')}
-            className={`px-4 py-2 rounded-full ${activeCategory === 'Prom' ? 'bg-yellow-500 text-black' : 'bg-black text-white border border-yellow-500/30'}`}
-          >
-            Prom
-          </button>
-          <button 
-            onClick={() => setActiveCategory('Airport')}
-            className={`px-4 py-2 rounded-full ${activeCategory === 'Airport' ? 'bg-yellow-500 text-black' : 'bg-black text-white border border-yellow-500/30'}`}
-          >
-            Airport
-          </button>
-        </div>
-
-        {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {/* Services Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <AnimatePresence>
           {visibleServices.map((service, index) => (
-            <div
+            <motion.div
               key={index}
-              className={`group relative bg-black rounded-2xl shadow-lg overflow-hidden transition-all duration-500 hover:shadow-xl hover:-translate-y-2 border border-yellow-500/30 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
-              style={{ transitionDelay: `${service.delay}ms` }}
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              whileHover={{ y: -10 }}
+              onHoverStart={() => setHoveredCard(index)}
+              onHoverEnd={() => setHoveredCard(null)}
+              className="relative group"
             >
-              {/* Image */}
-              <div className="relative h-64 overflow-hidden">
-                <Image
-                  src={service.image}
-                  alt={service.title}
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-300"></div>
-                <div className="absolute bottom-0 left-0 right-0 h-1 bg-yellow-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
-              </div>
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-yellow-900/10 to-yellow-900/30 rounded-xl pointer-events-none transition-all duration-500 opacity-0 group-hover:opacity-100" />
+              
+              <div className="relative h-full bg-gradient-to-br from-black to-gray-900 rounded-xl overflow-hidden border border-yellow-500/20 group-hover:border-yellow-500/50 transition-all duration-500 shadow-lg group-hover:shadow-xl group-hover:shadow-yellow-500/10">
+                {/* Image with parallax effect */}
+                <div className="relative h-64 overflow-hidden">
+                  <motion.div
+                    className="absolute inset-0"
+                    animate={{
+                      scale: hoveredCard === index ? 1.1 : 1
+                    }}
+                    transition={{ duration: 0.5 }}
+                  >
+                    <Image
+                      src={service.image}
+                      alt={service.title}
+                      fill
+                      className="object-cover"
+                    />
+                  </motion.div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-yellow-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
+                </div>
 
-              {/* Content */}
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-yellow-400 mb-3 group-hover:text-yellow-300 transition-colors duration-300">
-                  {service.title}
-                </h3>
-                <p className="text-gray-300 mb-6 leading-relaxed">
-                  {service.description}
-                </p>
-                <button className="w-full bg-yellow-500 text-black py-3 px-6 rounded-lg font-semibold hover:bg-yellow-400 hover:shadow-lg transition-all duration-300 transform hover:scale-[1.02]">
-                  Book Now
-                </button>
-              </div>
+                {/* Content */}
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-yellow-400 mb-3 group-hover:text-yellow-300 transition-colors duration-300">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-300 mb-4 leading-relaxed">
+                    {service.description}
+                  </p>
+                  
+                  {/* Features list */}
+                  <ul className="mb-6 space-y-2">
+                    {service.features.map((feature, i) => (
+                      <li key={i} className="flex items-start">
+                        <svg className="h-4 w-4 text-yellow-500 mt-1 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span className="text-gray-400 text-sm">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
 
-              {/* Hover Effect Overlay */}
-              <div className="absolute inset-0 border-2 border-yellow-500/0 group-hover:border-yellow-500/30 transition-all duration-500 pointer-events-none rounded-2xl"></div>
-            </div>
+                  <Link href={`/services/${service.title.toLowerCase().replace(/\s+/g, '-')}`}>
+  <motion.button
+    whileHover={{ scale: 1.02 }}
+    whileTap={{ scale: 0.98 }}
+    className="w-full bg-gradient-to-r from-yellow-500 to-yellow-600 text-black py-3 px-6 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 relative overflow-hidden"
+  >
+    <span className="relative z-10">View Details</span>
+    <span className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
+  </motion.button>
+</Link>
+                </div>
+              </div>
+            </motion.div>
           ))}
-        </div>
-
-        {/* Load More Button */}
-        {visibleCount < filteredServices.length && (
-          <div className="text-center mt-12">
-            <button 
-              onClick={loadMore}
-              className="bg-yellow-500 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-yellow-500/30"
-            >
-              Load More Services
-            </button>
-          </div>
-        )}
+        </AnimatePresence>
       </div>
 
-      {/* Global styles for the 3D effect */}
-      <style jsx global>{`
-        @keyframes float {
-          0% {
-            transform: translateY(0) translateX(0) rotate(0deg);
-          }
-          50% {
-            transform: translateY(-100px) translateX(50px) rotate(180deg);
-          }
-          100% {
-            transform: translateY(0) translateX(100px) rotate(360deg);
-          }
-        }
-      `}</style>
+      {/* Load More Button */}
+      {visibleCount < filteredServices.length && (
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5 }}
+          className="text-center mt-16"
+        >
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={loadMore}
+            className="relative px-8 py-4 bg-gradient-to-r from-yellow-600 to-yellow-700 text-black font-bold rounded-lg overflow-hidden group"
+          >
+            <span className="relative z-10 flex items-center justify-center">
+              View More Services
+              <svg className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </span>
+            <span className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
+          </motion.button>
+        </motion.div>
+      )}
+
+      {/* Testimonial Section */}
+      <div className="mt-24 bg-gradient-to-r from-yellow-900/30 to-black/50 p-8 rounded-2xl border border-yellow-500/20 relative overflow-hidden">
+        <div className="absolute -right-20 -top-20 w-64 h-64 rounded-full bg-yellow-500 opacity-10 blur-3xl" />
+        <div className="absolute -left-20 -bottom-20 w-64 h-64 rounded-full bg-yellow-500 opacity-10 blur-3xl" />
+        
+        <div className="relative z-10 max-w-4xl mx-auto text-center">
+          <svg className="w-12 h-12 text-yellow-500 mx-auto mb-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+          </svg>
+          <blockquote className="text-xl md:text-2xl font-medium text-white mb-6">
+            &quot;Cheery Limousine provided exceptional service for our wedding. Their attention to detail and professional chauffeurs made our special day stress-free. The luxury vehicle was immaculate and arrived perfectly on time.&quot;
+          </blockquote>
+          <div className="text-yellow-400 font-bold">— Sarah & Michael J.</div>
+          <div className="text-yellow-300 text-sm">Wedding Clients, June 2023</div>
+        </div>
+      </div>
     </section>
   )
 }

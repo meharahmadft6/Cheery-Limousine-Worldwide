@@ -162,7 +162,8 @@ export default function Features() {
 
       <div className="absolute top-1/2 right-5 hidden lg:block">
         <div className="w-5 h-5 bg-yellow-500 rounded-full animate-pulse delay-1500 shadow-lg shadow-yellow-500/30"></div>
-      </div>
+
+</div>
 
       {/* Global styles for the 3D effect */}
       <style jsx global>{`

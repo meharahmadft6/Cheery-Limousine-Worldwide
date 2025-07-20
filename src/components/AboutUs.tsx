@@ -1,7 +1,7 @@
 'use client'
 import React from 'react';
 import Image from 'next/image';
-
+import Link from 'next/link';
 const AboutUs: React.FC = () => {
   return (
     <section className="relative bg-black overflow-hidden">
@@ -67,10 +67,12 @@ const AboutUs: React.FC = () => {
                 ))}
               </div>
             </div>
-
-            <button className="mt-8 bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-yellow-500/20">
+<Link href={'/reservation'}>
+          <button className="mt-8 bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-yellow-500/20">
               Reserve Your Luxury Ride
+           
             </button>
+</Link> 
           </div>
 
           {/* 3D Image */}

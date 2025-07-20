@@ -1,5 +1,5 @@
 'use client'
-
+import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
 
@@ -135,9 +135,11 @@ export default function Hero() {
 
                 {/* Call to Action Button - Mobile Optimized */}
                 <div className={`transition-all duration-1000 delay-800 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'} mt-4 lg:mt-0`}>
+                <Link href={'/reservation'}>
                   <button className="bg-black text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full text-base sm:text-lg font-semibold border-2 border-yellow-500 hover:bg-yellow-500 hover:text-black transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-yellow-500/25 w-auto min-w-[140px] sm:min-w-[160px]">
                     Book Now
                   </button>
+                  </Link>
                 </div>
               </div>
 

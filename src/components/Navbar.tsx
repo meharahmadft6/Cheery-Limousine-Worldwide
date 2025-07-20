@@ -47,27 +47,54 @@ export default function Navbar() {
             <Link href="/about" className="text-white hover:text-yellow-500 transition-colors duration-300 border-b-2 border-transparent hover:border-yellow-500 pb-1">
               ABOUT US
             </Link>
+          
+            
             <div className="relative group">
-              <Link href="/services" className="text-white hover:text-yellow-500 transition-colors duration-300 flex items-center border-b-2 border-transparent hover:border-yellow-500 pb-1">
-                SERVICES
-                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </Link>
-              {/* Dropdown would go here */}
-            </div>
-            <div className="relative group">
-              <Link href="/fleet" className="text-white hover:text-yellow-500 transition-colors duration-300 flex items-center border-b-2 border-transparent hover:border-yellow-500 pb-1">
-                FLEETS
-                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </Link>
-              {/* Dropdown would go here */}
-            </div>
-            <Link href="/legal" className="text-white hover:text-yellow-500 transition-colors duration-300 border-b-2 border-transparent hover:border-yellow-500 pb-1">
-              LEGAL
+  <Link 
+    href="/services" 
+    className="text-white hover:text-yellow-500 transition-colors duration-300 flex items-center border-b-2 border-transparent hover:border-yellow-500 pb-1"
+  >
+    SERVICES
+    <svg className="w-4 h-4 ml-1 transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+    </svg>
+  </Link>
+  
+  {/* Dropdown Menu */}
+  <div className="pointer-events-none opacity-0 scale-95 absolute left-0 mt-2 w-72 bg-black/95 backdrop-blur-sm border border-gray-800 rounded-lg shadow-xl overflow-hidden transition-all duration-300 origin-top-right transform-gpu group-hover:opacity-100 group-hover:scale-100 group-hover:pointer-events-auto z-50">
+    <div className="grid grid-cols-1 divide-y divide-gray-800/50">
+      {[
+        { name: 'Airport Transportation', href: '/services/airport-transportation' },
+        { name: 'Executive Limo Service', href: '/services/executive-black-car-service' },
+        { name: 'Wedding Limo', href: '/services/wedding-limo-services' },
+        { name: 'Wine Tours', href: '/services/wine-tours' },
+        { name: 'Funeral Transportations', href: '/services/funeral-transportation' },
+        { name: 'Prom Limo Service', href: '/services/prom-limo-service' },
+        { name: 'Quinceañera Limo Service', href: '/services/quinceanera-limo-service' },
+        { name: 'Luxury Limousine Service', href: '/services/luxury-limousine-service' },
+        { name: 'Concert & Event Transportation', href: '/services/concert-&-event-transportation' }
+      ].map((service, index) => (
+        <Link
+          key={index}
+          href={service.href}
+          className="px-4 py-3 text-gray-300 hover:text-yellow-400 hover:bg-gray-800/50 transition-all duration-200 flex items-center"
+        >
+          <span className="flex-grow">{service.name}</span>
+          <svg className="w-4 h-4 text-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </Link>
+      ))}
+    </div>
+  </div>
+</div>
+<Link href="/fleet" className="text-white hover:text-yellow-500 transition-colors duration-300 border-b-2 border-transparent hover:border-yellow-500 pb-1">
+              Fleets
             </Link>
+           <Link href="/nationwide" className="text-white hover:text-yellow-500 transition-colors duration-300 border-b-2 border-transparent hover:border-yellow-500 pb-1">
+              Nationwide
+            </Link>
+      
           </div>
 
           {/* Contact Button - Desktop */}
@@ -114,8 +141,11 @@ export default function Navbar() {
               <Link href="/fleet" className="block px-4 py-3 text-white hover:text-yellow-500 transition-colors duration-300 border-l-4 border-transparent hover:border-yellow-500">
                 FLEETS
               </Link>
-              <Link href="/legal" className="block px-4 py-3 text-white hover:text-yellow-500 transition-colors duration-300 border-l-4 border-transparent hover:border-yellow-500">
-                LEGAL
+              <Link href="/nationwide" className="block px-4 py-3 text-white hover:text-yellow-500 transition-colors duration-300 border-l-4 border-transparent hover:border-yellow-500">
+                Nationwide
+              </Link>
+              <Link href="/reservation" className="block px-4 py-3 text-white hover:text-yellow-500 transition-colors duration-300 border-l-4 border-transparent hover:border-yellow-500">
+                Book Now
               </Link>
               <div className="pt-2 mt-2 border-t border-yellow-500/20">
                 <a 

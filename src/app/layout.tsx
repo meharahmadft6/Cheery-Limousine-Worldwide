@@ -12,14 +12,14 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Cheery Limousine Worldwide - Executive Limo Service Bay Area",
-  description:
-    "Experience unmatched luxury and professionalism with Cheery Limousine Worldwide—premium limo services in the SF Bay Area, trusted by executives and CEOs.",
-  icons: {
-    icon: "/logo.png", // Ensure this file exists at public/logo-re.png
-  },
-};
+  export const metadata: Metadata = {
+    title: "Cheery Limousine Worldwide - Executive Limo Service Bay Area",
+    description:
+      "Experience unmatched luxury and professionalism with Cheery Limousine Worldwide—premium limo services in the SF Bay Area, trusted by executives and CEOs.",
+    icons: {
+      icon: "/logo.png", // Ensure this file exists at public/logo-re.png
+    },
+  };
 
 export default function RootLayout({
   children,
@@ -32,7 +32,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.png" type="image/png" />
         <link rel="favicon" href="/logo.png" type="image/png" />
       </head>
-      <body
+      <body 
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
