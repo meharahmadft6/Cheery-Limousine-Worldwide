@@ -15,6 +15,7 @@ export default function HomePage() {
       <Features />
       <Testimonials />
       <Footer />
+      
       <WhatsAppFloat  />
     </>
   )
