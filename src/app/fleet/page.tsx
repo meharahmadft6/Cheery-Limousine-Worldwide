@@ -206,18 +206,7 @@ const FleetPage = () => {
       description:
         "The pinnacle of luxury limousines for the most discerning clients.",
     },
-    {
-      id: "limo-4",
-      type: "LIMOUSINE",
-      name: "Lincoln Stretch Limousine",
-      imageUrl: "/lemo.jpg  ",
-      passengerCapacity: 10,
-      luggageCapacity: 4,
-      features: ["LED lighting", "Premium bar", "Privacy divider"],
-      description:
-        "Classic stretch limousine perfect for weddings and special events.",
-    },
-
+  
     // Shuttle Buses
     {
       id: "shuttle-1",
