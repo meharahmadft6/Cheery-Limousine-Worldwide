@@ -18,7 +18,7 @@ const testimonials = [
     name: "A-dul",
     date: "2025-06-13",
     rating: 5,
-    text: "Used All Bay multiple times, they never disappoint, always on time, clean vehicles and top notch service. Highly recommend if you want luxury transportation.",
+    text: "Used Cherry Limousine Worldwide multiple times, they never disappoint, always on time, clean vehicles and top notch service. Highly recommend if you want luxury transportation.",
     avatar: "A"
   },
   {
@@ -39,7 +39,7 @@ const testimonials = [
     name: "Sarah Johnson",
     date: "2025-05-28",
     rating: 5,
-    text: "The most professional limo service in the Bay Area. Punctual, clean cars, and excellent drivers. Will use them again!",
+    text: "The most professional limo service in the worldwide Area. Punctual, clean cars, and excellent drivers. Will use them again!",
     avatar: "S"
   }
 ]
