@@ -182,7 +182,7 @@ export default function PrivacyPolicy() {
                   <h3 className="text-xl font-semibold mb-2">Wait Time Charges</h3>
                   <ul className="space-y-2">
                     <li>15-minute complimentary grace period for all pickups</li>
-                    <li>Additional wait time billed in 30-minute increments at vehicle's hourly rate</li>
+                    <li>Additional wait time billed in 30-minute increments at vehicles hourly rate</li>
                   </ul>
                 </div>
                 
