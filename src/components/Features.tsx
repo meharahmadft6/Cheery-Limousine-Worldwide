@@ -108,7 +108,7 @@ export default function Features() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className={`text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            Why Choose <span className="text-yellow-400">Cheery Limousine</span>
+            Why Choose <span className="text-yellow-400">Cherry Limousine</span>
           </h2>
           <p className={`text-lg text-yellow-200 max-w-3xl mx-auto transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             Our commitment to excellence ensures every journey meets the highest standards of luxury and professionalism.

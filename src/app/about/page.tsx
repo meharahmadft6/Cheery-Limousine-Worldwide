@@ -75,7 +75,7 @@ export default function AboutPage() {
             transition={{ delay: 0.3, duration: 0.8 }}
           >
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600">
-              Cheery Limousine Worldwide
+              Cherry Limousine Worldwide
             </span>
           </motion.h1>
           <motion.p 
@@ -130,7 +130,7 @@ export default function AboutPage() {
 
             <motion.div variants={fadeIn}>
               <p className="mb-6 text-lg leading-relaxed md:text-xl">
-                Founded in 2010, Cheery Limousine Worldwide began with a single vehicle and a vision to redefine luxury transportation in the Bay Area. What started as a small local service has grown into a premier limousine company trusted by executives, celebrities, and discerning clients.
+                Founded in 2010, Cherry Limousine Worldwide began with a single vehicle and a vision to redefine luxury transportation in the Bay Area. What started as a small local service has grown into a premier limousine company trusted by executives, celebrities, and discerning clients.
               </p>
               <p className="mb-6 text-lg leading-relaxed md:text-xl">
                 Our founder, recognized the need for a transportation service that combined impeccable reliability with genuine hospitality. Today, we maintain that original commitment while expanding our fleet and services to meet the evolving needs of our clients.
@@ -145,7 +145,7 @@ export default function AboutPage() {
             >
               <Image
                 src="/limo1.jpeg"
-                alt="Founder of Cheery Limousine"
+                alt="Founder of Cherry Limousine"
                 fill
                 className="rounded-xl object-cover shadow-2xl"
               />
@@ -363,7 +363,7 @@ export default function AboutPage() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
           >
-            Experience the Cheery Difference
+            Experience the Cherry Difference
           </motion.h2>
           <motion.p 
             className="mx-auto mb-8 max-w-2xl text-xl text-gray-200"

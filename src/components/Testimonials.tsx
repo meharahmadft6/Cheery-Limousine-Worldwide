@@ -140,7 +140,7 @@ export default function Testimonials() {
                 <div className="w-24 h-24 bg-yellow-500/10 rounded-full mx-auto mb-6 flex items-center justify-center border border-yellow-500/30">
                   <span className="text-4xl text-yellow-400">★</span>
                 </div>
-                <h3 className="text-2xl font-bold text-yellow-400 mb-2">Cheery Limousine Worldwide</h3>
+                <h3 className="text-2xl font-bold text-yellow-400 mb-2">Cherry Limousine Worldwide</h3>
                 <p className="text-gray-300 mb-4">170+ Five Star Reviews</p>
                 <div className="flex justify-center space-x-1">
                   {[...Array(5)].map((_, i) => (

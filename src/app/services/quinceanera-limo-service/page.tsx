@@ -180,7 +180,7 @@ export default function QuinceaneraPage() {
               <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
             </svg>
             <blockquote className="text-xl italic text-white mb-6">
-  &quot;Cheery Limousine made my daughter&#39;s quinceañera absolutely magical! The stretch limo was decorated beautifully with her colors, and the chauffeur was so professional. They coordinated perfectly with our photographer for stunning photos by the bay. Everything was flawless!&quot;
+  &quot;Cherry Limousine made my daughter&#39;s quinceañera absolutely magical! The stretch limo was decorated beautifully with her colors, and the chauffeur was so professional. They coordinated perfectly with our photographer for stunning photos by the bay. Everything was flawless!&quot;
 </blockquote>
 
             <div className="text-yellow-300 font-bold">— The Rodriguez Family</div>
@@ -205,7 +205,7 @@ export default function QuinceaneraPage() {
               href="tel:+14156518239" 
               className="border border-yellow-500 text-yellow-500 hover:bg-yellow-500/10 px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300"
             >
-              Call Now: (555) 123-4567
+              Call Now: +1 (415) 651-8239s
             </a>
           </div>
         </section>

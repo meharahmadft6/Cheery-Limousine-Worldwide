@@ -87,7 +87,7 @@ export default function ReservationPage() {
   return (
     <>
       <Head>
-        <title>Reservation | Cheery Limousine Worldwide</title>
+        <title>Reservation | Cherry Limousine Worldwide</title>
       </Head>
 
       <div className="min-h-screen bg-black text-white">
@@ -101,7 +101,7 @@ export default function ReservationPage() {
               Reserve Your Luxury Ride
             </h1>
             <p className="text-xl text-yellow-200 max-w-2xl">
-              Experience the Cheery Limousine Worldwide difference with our premium transportation services
+              Experience the Cherry Limousine Worldwide difference with our premium transportation services
             </p>
           </div>
         </div>
@@ -113,7 +113,7 @@ export default function ReservationPage() {
               <div className="text-6xl mb-4">🎉</div>
               <h2 className="text-3xl font-bold text-yellow-400 mb-2">Reservation Confirmed!</h2>
               <p className="text-lg mb-6">
-                Thank you for choosing Cheery Limousine Worldwide. Our team will contact you shortly to confirm your booking details.
+                Thank you for choosing Cherry Limousine Worldwide. Our team will contact you shortly to confirm your booking details.
               </p>
               <button 
                 onClick={() => setIsSuccess(false)}
@@ -366,7 +366,7 @@ export default function ReservationPage() {
                     </div>
                     <div>
                       <p className="text-sm text-gray-400">Need immediate assistance?</p>
-                      <a href="tel:+14156518239" className="text-yellow-400 font-semibold hover:underline">+1 415) 6518-239</a>
+                      <a href="tel:+14156518239" className="text-yellow-400 font-semibold hover:underline">+1 (415) 651-8239</a>
                     </div>
                   </div>
                 </div>

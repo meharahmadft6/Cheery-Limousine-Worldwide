@@ -179,7 +179,7 @@ export default function LuxuryServicePage() {
               <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
             </svg>
             <blockquote className="text-xl italic text-white mb-6">
-              &quot;We booked Cheery Limousine for our anniversary celebration and it was absolutely perfect! The limousine was spotless, the champagne was chilled, and our driver made the entire experience magical. The ambient lighting set the perfect mood for our special night out.&quot;
+              &quot;We booked Cherry Limousine for our anniversary celebration and it was absolutely perfect! The limousine was spotless, the champagne was chilled, and our driver made the entire experience magical. The ambient lighting set the perfect mood for our special night out.&quot;
             </blockquote>
             <div className="text-yellow-400 font-bold">— James & Sophia</div>
             <div className="text-yellow-300 text-sm">San Francisco, CA</div>
@@ -200,10 +200,10 @@ export default function LuxuryServicePage() {
               Book Luxury Service
             </a>
             <a 
-              href="tel:+15551234567" 
+              href="tel:+tel:+14156518239" 
               className="border border-yellow-500 text-yellow-500 hover:bg-yellow-500/10 px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300"
             >
-              Call Now: (555) 123-4567
+              Call Now: +1 (415) 651-8239s
             </a>
           </div>
         </section>

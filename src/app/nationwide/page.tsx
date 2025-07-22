@@ -238,7 +238,7 @@ export default function NationwidePage() {
           >
             Whether you&apos;re attending a business conference, celebrating a
             graduation, heading off on a much needed vacation or just spending a
-            special night in the city, Cheery Limousine&apos;s limo service will
+            special night in the city, Cherry Limousine&apos;s limo service will
             promptly attend to all your travel needs.
           </motion.p>
           <motion.div
@@ -382,7 +382,7 @@ export default function NationwidePage() {
             {[
               {
                 quote:
-                  "Cheery Limousine provided exceptional service for our corporate event in New York. The chauffeur was professional and the vehicle was immaculate.",
+                  "Cherry Limousine provided exceptional service for our corporate event in New York. The chauffeur was professional and the vehicle was immaculate.",
                 author: "Michael T., New York",
                 rating: "★★★★★",
               },

@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Cheery Limousine Worldwide |  Premium Limo Service",
+  title: "Cherry Limousine Worldwide |  Premium Limo Service",
   description: "Luxury limousine service in San Francisco Bay Area. Corporate transportation, airport transfers, weddings & special events. 24/7 reliable chauffeurs.",
   keywords: [
     "San Francisco limo service",
@@ -31,16 +31,16 @@ export const metadata: Metadata = {
     icon: "/logo-re.png",
   },
   openGraph: {
-    title: "Premium Limo Service San Francisco | Cheery Limousine Worldwide",
+    title: "Premium Limo Service San Francisco | Cherry Limousine Worldwide",
     description: "Luxury limousine service in San Francisco Bay Area. Corporate transportation, airport transfers, weddings & special events.",
     url: "https://cherrylimousineworldwide.com",
-    siteName: "Cheery Limousine Worldwide",
+    siteName: "Cherry Limousine Worldwide",
     images: [
       {
         url: "https://cherrylimousineworldwide.com/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Cheery Limousine Worldwide Luxury Fleet",
+        alt: "Cherry Limousine Worldwide Luxury Fleet",
       },
     ],
     locale: "en_US",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Premium Limo Service San Francisco | Cheery Limousine Worldwide",
+    title: "Premium Limo Service San Francisco | Cherry Limousine Worldwide",
     description: "Luxury limousine service in San Francisco Bay Area.",
     images: ["https://cherrylimousineworldwide.com/twitter-image.jpg"],
   },
@@ -71,7 +71,7 @@ export default function RootLayout({
   {JSON.stringify({
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Cheery Limousine Worldwide",
+    "name": "Cherry Limousine Worldwide",
     "image": "https://cherrylimousineworldwide.com/logo-re.png",
     "@id": "https://cherrylimousineworldwide.com",
     "url": "https://cherrylimousineworldwide.com",

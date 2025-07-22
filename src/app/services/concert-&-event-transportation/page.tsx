@@ -179,7 +179,7 @@ export default function ConcertTransportationPage() {
               <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
             </svg>
             <blockquote className="text-xl italic text-white mb-6">
-              &quot;We used Cheery Limousine for our group going to a Warriors game and it was the best decision! No parking nightmares, no waiting for Ubers, and our party bus had amazing sound system to keep the energy high. The driver even knew the perfect pickup spot after the game to avoid all the chaos.&quot;
+              &quot;We used Cherry Limousine for our group going to a Warriors game and it was the best decision! No parking nightmares, no waiting for Ubers, and our party bus had amazing sound system to keep the energy high. The driver even knew the perfect pickup spot after the game to avoid all the chaos.&quot;
             </blockquote>
             <div className="text-yellow-400 font-bold">— Jason & Friends</div>
             <div className="text-yellow-300 text-sm">Concord, CA</div>
@@ -200,7 +200,7 @@ export default function ConcertTransportationPage() {
               Reserve Event Transportation
             </a>
             <a 
-              href="tel:+15551234567" 
+              href="tel:+tel:+14156518239" 
               className="border border-yellow-500 text-yellow-500 hover:bg-yellow-500/10 px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300"
             >
               Call Now: +1 (415) 651-8239

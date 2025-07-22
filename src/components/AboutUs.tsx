@@ -34,7 +34,7 @@ const AboutUs: React.FC = () => {
           {/* Text Content */}
           <div className="text-white">
             <div className="mb-8">
-              <h1 className="text-3xl font-bold text-yellow-400 mb-2">Cheery Limousine Worldwide</h1>
+              <h1 className="text-3xl font-bold text-yellow-400 mb-2">Cherry Limousine Worldwide</h1>
               <p className="text-gray-300">Experience unmatched luxury and professionalism with our premium limo services in the SF Bay Area, trusted by executives and CEOs.</p>
             </div>
             
@@ -46,7 +46,7 @@ const AboutUs: React.FC = () => {
             
             <p className="text-lg md:text-xl mb-8 leading-relaxed text-gray-300">
               With <span className="font-bold text-yellow-400">25+ years</span> of distinguished service, 
-              Cheery Limousine Worldwide has established itself as the premier choice for elite transportation 
+              Cherry Limousine Worldwide has established itself as the premier choice for elite transportation 
               throughout the Bay Area. We specialize in delivering discreet, reliable, and 
               seamless luxury experiences tailored for discerning professionals and corporate leaders.
             </p>
@@ -54,7 +54,7 @@ const AboutUs: React.FC = () => {
             <div className="bg-black/70 backdrop-blur-sm p-6 rounded-xl border border-yellow-500/30">
               <h3 className="text-xl font-bold mb-4 text-yellow-400">Our Distinguished Clients</h3>
               <p className="mb-4 text-gray-300">
-                Cheery Limousine Worldwide serves the most respected names in business and technology, including:
+                Cherry Limousine Worldwide serves the most respected names in business and technology, including:
               </p>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                 {[
@@ -92,7 +92,7 @@ const AboutUs: React.FC = () => {
             <div className="absolute inset-0 rounded-2xl overflow-hidden transform rotate-3 hover:rotate-0 transition-transform duration-700 shadow-2xl shadow-yellow-500/30">
               <Image
                 src="/limo7.jpg"
-                alt="Premium Limousine Service by Cheery Limousine Worldwide"
+                alt="Premium Limousine Service by Cherry Limousine Worldwide"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"

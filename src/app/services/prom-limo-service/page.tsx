@@ -179,7 +179,7 @@ export default function PromServicePage() {
               <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
             </svg>
             <blockquote className="text-xl italic text-white mb-6">
-              &quot;Our prom night was absolutely perfect thanks to Cheery Limousine! The limo was spotless, the driver was professional yet fun, and they even helped coordinate our group photos. The LED lighting inside made for amazing pictures and the whole experience was worth every penny!&quot;
+              &quot;Our prom night was absolutely perfect thanks to Cherry Limousine! The limo was spotless, the driver was professional yet fun, and they even helped coordinate our group photos. The LED lighting inside made for amazing pictures and the whole experience was worth every penny!&quot;
             </blockquote>
             <div className="text-yellow-400 font-bold">— Jessica T. & Friends</div>
             <div className="text-yellow-300 text-sm">San Mateo High School Prom 2023</div>
