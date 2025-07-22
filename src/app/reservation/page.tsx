@@ -366,7 +366,7 @@ export default function ReservationPage() {
                     </div>
                     <div>
                       <p className="text-sm text-gray-400">Need immediate assistance?</p>
-                      <a href="tel:+14158771899" className="text-yellow-400 font-semibold hover:underline">+1 (415) 877-1899</a>
+                      <a href="tel:+14156518239" className="text-yellow-400 font-semibold hover:underline">+1 415) 6518-239</a>
                     </div>
                   </div>
                 </div>

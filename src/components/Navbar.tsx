@@ -129,7 +129,7 @@ export default function Navbar() {
               href="tel:+14156518239"
               className="bg-yellow-500 text-black px-6 py-2 rounded-full font-semibold hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-yellow-500/30"
             >
-             +1 (415) 6518-239
+            +1 (415) 651-8239
             </a>
           </div>
 
@@ -250,7 +250,7 @@ export default function Navbar() {
                   className="block w-full text-center bg-yellow-500 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-all duration-300"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  +1 (415) 6518-239
+                  +1 (415) 651-8239
                 </a>
               </div>
             </div>

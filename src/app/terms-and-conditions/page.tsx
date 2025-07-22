@@ -208,7 +208,7 @@ export default function PrivacyPolicy() {
             </motion.p>
             <motion.div className="bg-gray-900 p-6 rounded-lg" variants={fadeIn}>
               <p className="font-bold text-yellow-500">Cherry Limousine Worldwide</p>
-              <p>Phone: (415) 6518-239</p>
+              <p>Phone: +1 415) 6518-239</p>
               <p>Email:  reservations@cherrylimousineworldwide.com</p>
               <p className="mt-4">Last Updated: {new Date().toLocaleDateString()}</p>
             </motion.div>
