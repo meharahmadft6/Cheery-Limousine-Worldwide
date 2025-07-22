@@ -216,7 +216,7 @@ export default function PrivacyPolicy() {
                 Contact Our Team
               </h2>
               <div className="bg-gray-900 p-6 rounded-lg">
-                <p className="font-bold text-yellow-500">All Bay Limousine</p>
+                <p className="font-bold text-yellow-500">Cherry Limousine Worldwide</p>
                 <p>Dispatch: +1 (415) 651-8239</p>
                 <p>Available 24/7 for your transportation needs</p>
                 <p className="mt-4">Policy Effective Date: {new Date().toLocaleDateString()}</p>
