@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 export default function WhatsAppFloat() {
   const [open, setOpen] = useState(false);
   const [message, setMessage] = useState('');
-  const phoneNumber = '923394126260'; // Static phone number
+  const phoneNumber = '+1415651839'; // Static phone number
 
   const handleSend = () => {
     if (!message.trim()) return;

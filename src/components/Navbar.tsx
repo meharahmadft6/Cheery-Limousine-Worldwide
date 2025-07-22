@@ -15,31 +15,34 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-24">
           {/* Large Side Logo - Hidden on mobile */}
           <div className="hidden md:flex items-center">
-            <div className="w-48 h-20 relative">
-              <Link href="/">
-                <Image 
-                  src="/logo-re.png" 
-                  alt="Cheery Limousine Worldwide Logo" 
-                  fill
-                  className="object-cover object-left"
-                />
-              </Link>
-            </div>
-          </div>
+  <div className="w-72 h-28 relative"> {/* Increased width and height */}
+    <Link href="/">
+      <Image 
+        src="/logo-re2.png" 
+        alt="Cheery Limousine Worldwide Logo" 
+        fill
+        className="object-cover object-left" // changed from cover to contain
+        priority
+      />
+    </Link>
+  </div>
+</div>
 
           {/* Mobile Logo - Centered */}
           <div className="md:hidden w-full">
-            <div className="w-40 h-16 relative">
-              <Link href="/">
-                <Image 
-                  src="/logo-re.png" 
-                  alt="Cheery Limousine Worldwide Logo" 
-                  fill
-                  className="object-cover"
-                />
-              </Link>
-            </div>
-          </div>
+  <div className="w-60 h-24 relative"> {/* Increased size */}
+    <Link href="/">
+      <Image 
+        src="/logo-re2.png" 
+        alt="Cheery Limousine Worldwide Logo" 
+        fill
+        className="object-cover"
+        priority
+      />
+    </Link>
+  </div>
+</div>
+
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
@@ -117,15 +120,16 @@ export default function Navbar() {
             <Link href="/nationwide" className="text-white hover:text-yellow-500 transition-colors duration-300 border-b-2 border-transparent hover:border-yellow-500 pb-1">
               NATIONWIDE
             </Link>
+    
           </div>
 
           {/* Contact Button - Desktop */}
           <div className="hidden md:block">
             <a 
-              href="tel:+14158771899"
+              href="tel:+14156518239"
               className="bg-yellow-500 text-black px-6 py-2 rounded-full font-semibold hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-yellow-500/30"
             >
-              +1 (415) 877-1899
+             +1 (415) 6518-239
             </a>
           </div>
 
@@ -186,15 +190,15 @@ export default function Navbar() {
                 {isMobileServicesOpen && (
                   <div className="ml-4 mt-1 space-y-1 border-l border-yellow-500/20">
                     {[
-                      { name: 'Airport Transportation', href: '/services/airport-transportation' },
-                      { name: 'Executive Limo Service', href: '/services/executive-black-car-service' },
-                      { name: 'Wedding Limo', href: '/services/wedding-limo-services' },
-                      { name: 'Wine Tours', href: '/services/wine-tours' },
-                      { name: 'Funeral Transportations', href: '/services/funeral-transportation' },
-                      { name: 'Prom Limo Service', href: '/services/prom-limo-service' },
-                      { name: 'Quinceañera Limo Service', href: '/services/quinceanera-limo-service' },
-                      { name: 'Luxury Limousine Service', href: '/services/luxury-limousine-service' },
-                      { name: 'Concert & Event Transportation', href: '/services/concert-&-event-transportation' }
+                    { name: 'Airport Transportation', href: '/services/airport-transportation' },
+                    { name: 'Executive Limo Service', href: '/services/executive-black-car-service' },
+                    { name: 'Wedding Limo', href: '/services/wedding-limo-services' },
+                    { name: 'Wine Tours', href: '/services/wine-tours' },
+                    { name: 'Funeral Transportations', href: '/services/funeral-transportation' },
+                    { name: 'Prom Limo Service', href: '/services/prom-limo-service' },
+                    { name: 'Quinceañera Limo Service', href: '/services/quinceanera-limo-service' },
+                    { name: 'Luxury Limousine Service', href: '/services/luxury-limousine-service' },
+                    { name: 'Concert & Event Transportation', href: '/services/concert-&-event-transportation' }
                     ].map((service, index) => (
                       <Link
                         key={index}
@@ -233,13 +237,20 @@ export default function Navbar() {
               >
                 BOOK NOW
               </Link>
+              <Link 
+                href="/terms-and-conditions" 
+                className="block px-4 py-3 text-white hover:text-yellow-500 transition-colors duration-300 border-l-4 border-transparent hover:border-yellow-500"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Privacy Policy
+              </Link>
               <div className="pt-2 mt-2 border-t border-yellow-500/20">
                 <a 
-                  href="tel:+14158771899"
+                  href="tel:+16518239"
                   className="block w-full text-center bg-yellow-500 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-all duration-300"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  +1 (415) 877-1899
+                  +1 (415) 6518-239
                 </a>
               </div>
             </div>

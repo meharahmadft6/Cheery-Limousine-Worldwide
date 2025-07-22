@@ -57,7 +57,19 @@ const AboutUs: React.FC = () => {
                 Cheery Limousine Worldwide serves the most respected names in business and technology, including:
               </p>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-                {['Google', 'Apple', 'Microsoft', 'HP', 'DCVC', 'FOX News', 'Fortune 500 Companies'].map((company) => (
+                {[
+  "Google",
+  "FOX News",
+  "Jet Aviation",
+  "Goldman Sachs",
+  "Bloomberg",
+  "BlackRock",
+  "The Wall Street Journal",
+  "CNBC",
+  "McKinsey & Company",
+  "CEOs of Global Tech Firms",
+  "Silicon Valley Startups & Unicorns"
+].map((company) => (
                   <div key={company} className="flex items-center text-yellow-300">
                     <svg className="w-4 h-4 mr-2 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />

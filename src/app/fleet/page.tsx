@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 type Vehicle = {
   id: string;
-  type: "SEDAN" | "SUV" | "LIMOUSINE" | "SHUTTLE BUS" | "PARTY BUS";
+  type: "SEDAN" | "SUV" | "LIMOUSINE" | "SHUTTLE BUS" | "PARTY BUS"| "COACH";
   name: string;
   imageUrl: string;
   passengerCapacity: number;
@@ -55,7 +55,62 @@ const FleetPage = () => {
       description:
         "Progressive luxury with industry-leading driver assistance systems.",
     },
-
+    {
+      id: "sedan-4",
+      type: "SEDAN",
+      name: "BMW 5 Series",
+      imageUrl: "/bmw.webp",
+      passengerCapacity: 3,
+      luggageCapacity: 2,
+      features: ["Dynamic handling", "iDrive infotainment", "Harman Kardon audio"],
+      description:
+        "A perfect blend of performance and business-class luxury, ideal for executive rides.",
+    },
+    {
+      id: "sedan-5",
+      type: "SEDAN",
+      name: "Mercedes-Benz E-Class",
+      imageUrl: "/benz.jpg",
+      passengerCapacity: 3,
+      luggageCapacity: 2,
+      features: ["MBUX interface", "Ambient lighting", "Agility control suspension"],
+      description:
+        "Smart, elegant, and intuitive — a true executive’s choice for smooth city rides.",
+    },
+    {
+      id: "sedan-6",
+      type: "SEDAN",
+      name: "Lexus LS",
+      imageUrl: "/lexas.jpg",
+      passengerCapacity: 3,
+      luggageCapacity: 3,
+      features: ["Mark Levinson audio", "Ottoman rear seats", "Climate concierge"],
+      description:
+        "Japanese craftsmanship with ultra-luxury comfort and advanced hybrid efficiency.",
+    },
+    {
+      id: "sedan-7",
+      type: "SEDAN",
+      name: "Genesis G90",
+      imageUrl: "/genesis.avif",
+      passengerCapacity: 3,
+      luggageCapacity: 3,
+      features: ["Nappa leather", "Driver attention warning", "Lexicon premium audio"],
+      description:
+        "A rising luxury icon, combining elegance, intelligence, and next-gen technology.",
+    },
+    {
+      id: "sedan-8",
+      type: "SEDAN",
+      name: "Jaguar XJ",
+      imageUrl: "/jaguar.jpg",
+      passengerCapacity: 3,
+      luggageCapacity: 2,
+      features: ["Panoramic sunroof", "Meridian sound system", "Adaptive dynamics"],
+      description:
+        "A bold British statement in luxury, performance, and distinctive design.",
+    }
+,
     // SUVs
     {
       id: "suv-1",
@@ -97,6 +152,34 @@ const FleetPage = () => {
       ],
       description:
         "The S-Class of SUVs offering first-class comfort in every seat.",
+    }, {
+      id: "suv-4",
+      type: "SUV",
+      name: "Range Rover Autobiography",
+      imageUrl: "/range.jpg",
+      passengerCapacity: 4,
+      luggageCapacity: 4,
+      features: [
+        "Panoramic sunroof",
+        "Meridian sound system",
+        "All-terrain response",
+      ],
+      description:
+        "A blend of luxury and off-road capability, perfect for urban and adventurous drives alike.",
+    },{
+      id: "suv-4",
+      type: "SUV",
+      name: "BMW X7",
+      imageUrl: "/bmwx5.avif",
+      passengerCapacity: 5,
+      luggageCapacity: 4,
+      features: [
+        "Crystal gear selector",
+        "BMW iDrive 8",
+        "Captain’s chairs",
+      ],
+      description:
+        "A premium 3-row SUV blending elegance, performance, and space for all.",
     },
 
     // Limousines
@@ -185,6 +268,24 @@ const FleetPage = () => {
       description:
         "Perfect for bachelor/bachelorette parties and nightclub hopping.",
     },
+    {
+      id: "coach-1",
+      type: "COACH",
+      name: "56 Pax Luxury Motorcoach",
+      imageUrl: "/Ccoach.webp", // You can replace this with an actual image URL
+      passengerCapacity: 56,
+      luggageCapacity: 56,
+      features: [
+        "Reclining leather seats",
+        "Onboard restroom",
+        "Wi-Fi & power outlets",
+        "Climate control",
+        "PA & entertainment system",
+      ],
+      description:
+        "Spacious and luxurious 56-passenger motorcoach designed for group travel, ensuring comfort, safety, and convenience on long journeys or corporate events."
+    }
+    
   ];
 
   const vehicleTypes = [
@@ -193,6 +294,7 @@ const FleetPage = () => {
     "LIMOUSINE",
     "SHUTTLE BUS",
     "PARTY BUS",
+    "COACH",
   ] as const;
 
   const containerVariants = {

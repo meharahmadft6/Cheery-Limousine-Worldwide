@@ -1,6 +1,5 @@
 'use client'
 import { useState, useRef } from 'react'
-import Image from 'next/image'
 import Head from 'next/head'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
@@ -97,13 +96,6 @@ export default function ReservationPage() {
         {/* Hero Section */}
         <div className="relative h-96 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-black via-black to-yellow-900 opacity-90"></div>
-          <Image
-            src="/limo-interior.jpg"
-            alt="Luxury Limousine Interior"
-            fill
-            className="object-cover"
-            priority
-          />
           <div className="relative z-10 h-full flex flex-col justify-center items-center text-center px-4">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-yellow-400">
               Reserve Your Luxury Ride
