@@ -63,7 +63,7 @@ export default function PrivacyPolicy() {
             transition={{ delay: 0.3, duration: 0.8 }}
           >
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600">
-              Privacy Policy
+              Terms and Conditions
             </span>
           </motion.h1>
           <motion.p

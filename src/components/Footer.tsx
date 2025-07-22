@@ -70,7 +70,8 @@ export default function Footer() {
                 { name: 'About Us', href: '/about' },
                 { name: 'Fleet', href: '/fleet' },
                 { name: 'Nationwide', href: '/nationwide' },
-                { name: 'Terms and Conditions', href: '/terms-and-conditions' }
+                { name: 'Terms and Conditions', href: '/terms-and-conditions' },
+                { name: 'Policies', href: '/policies' }
               ].map((link, index) => (
                 <li key={index}>
                   <a 
