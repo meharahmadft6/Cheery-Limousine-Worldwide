@@ -25,21 +25,7 @@ type Vehicle = {
 const FleetPage = () => {
   const vehicles: Vehicle[] = [
     // Sedans
-    {
-      id: "sedan-1",
-      type: "SEDAN",
-      name: "Mercedes-Benz S-Class",
-      imageUrl: "/sclass.jpg",
-      passengerCapacity: 3,
-      luggageCapacity: 3,
-      features: [
-        "Executive seating",
-        "Advanced climate control",
-        "Burmester sound system",
-      ],
-      description:
-        "The epitome of luxury sedans with unparalleled comfort and cutting-edge technology.",
-    },
+  
     {
       id: "sedan-2",
       type: "SEDAN",
