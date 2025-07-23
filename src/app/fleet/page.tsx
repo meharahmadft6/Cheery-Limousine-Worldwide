@@ -52,17 +52,6 @@ const FleetPage = () => {
         "Sophisticated design meets innovative technology for the ultimate driving experience.",
     },
     {
-      id: "sedan-3",
-      type: "SEDAN",
-      name: "Audi A8 L",
-      imageUrl: "/audi.avif",
-      passengerCapacity: 3,
-      luggageCapacity: 3,
-      features: ["Virtual cockpit", "Massage seats", "Night vision assistant"],
-      description:
-        "Progressive luxury with industry-leading driver assistance systems.",
-    },
-    {
       id: "sedan-4",
       type: "SEDAN",
       name: "BMW 5 Series",
@@ -77,108 +66,9 @@ const FleetPage = () => {
       description:
         "A perfect blend of performance and business-class luxury, ideal for executive rides.",
     },
-    {
-      id: "sedan-5",
-      type: "SEDAN",
-      name: "Mercedes-Benz E-Class",
-      imageUrl: "/benz.jpg",
-      passengerCapacity: 3,
-      luggageCapacity: 2,
-      features: [
-        "MBUX interface",
-        "Ambient lighting",
-        "Agility control suspension",
-      ],
-      description:
-        "Smart, elegant, and intuitive — a true executive’s choice for smooth city rides.",
-    },
-    {
-      id: "sedan-6",
-      type: "SEDAN",
-      name: "Lexus LS",
-      imageUrl: "/lexas.jpg",
-      passengerCapacity: 3,
-      luggageCapacity: 3,
-      features: [
-        "Mark Levinson audio",
-        "Ottoman rear seats",
-        "Climate concierge",
-      ],
-      description:
-        "Japanese craftsmanship with ultra-luxury comfort and advanced hybrid efficiency.",
-    },
-    {
-      id: "sedan-7",
-      type: "SEDAN",
-      name: "Genesis G90",
-      imageUrl: "/genesis.avif",
-      passengerCapacity: 3,
-      luggageCapacity: 3,
-      features: [
-        "Nappa leather",
-        "Driver attention warning",
-        "Lexicon premium audio",
-      ],
-      description:
-        "A rising luxury icon, combining elegance, intelligence, and next-gen technology.",
-    },
-    {
-      id: "sedan-8",
-      type: "SEDAN",
-      name: "Jaguar XJ",
-      imageUrl: "/jaguar.jpg",
-      passengerCapacity: 3,
-      luggageCapacity: 2,
-      features: [
-        "Panoramic sunroof",
-        "Meridian sound system",
-        "Adaptive dynamics",
-      ],
-      description:
-        "A bold British statement in luxury, performance, and distinctive design.",
-    },
+
     // SUVs
-    {
-      id: "suv-1",
-      type: "SUV",
-      name: "Cadillac Escalade",
-      imageUrl: "/cadilliacsuv2.webp",
-      passengerCapacity: 7,
-      luggageCapacity: 7,
-      features: ['36" curved OLED display', "AKG Studio sound", "Super Cruise"],
-      description:
-        "The ultimate luxury SUV with bold American styling and premium amenities.",
-    },
-    {
-      id: "suv-2",
-      type: "SUV",
-      name: "Lincoln Navigator",
-      imageUrl: "/lincon.jpg",
-      passengerCapacity: 7,
-      luggageCapacity: 7,
-      features: [
-        "30-way seats",
-        "Revel audio system",
-        "Perfect Position seats",
-      ],
-      description:
-        "Spacious and sophisticated with exceptional comfort for all passengers.",
-    },
-    {
-      id: "suv-3",
-      type: "SUV",
-      name: "Mercedes-Benz GLS",
-      imageUrl: "/gls.jpg",
-      passengerCapacity: 6,
-      luggageCapacity: 6,
-      features: [
-        "MBUX infotainment",
-        "ENERGIZING comfort",
-        "AIRMATIC suspension",
-      ],
-      description:
-        "The S-Class of SUVs offering first-class comfort in every seat.",
-    },
+
     {
       id: "suv-4",
       type: "SUV",
@@ -198,28 +88,6 @@ const FleetPage = () => {
 
     // Limousines
 
-    {
-      id: "limo-2",
-      type: "LIMOUSINE",
-      name: "Cadillac XTS Limousine",
-      imageUrl: "/cadilliac.jpeg",
-      passengerCapacity: 8,
-      luggageCapacity: 4,
-      features: ["Leather seating", "Entertainment system", "Climate control"],
-      description:
-        "Executive limousine offering both comfort and professional style.",
-    },
-    {
-      id: "limo-3",
-      type: "LIMOUSINE",
-      name: "Mercedes-Benz S-Class Limousine",
-      imageUrl: "/sclass.jpg",
-      passengerCapacity: 6,
-      luggageCapacity: 4,
-      features: ["Executive seating", "Massage functions", "Burmester sound"],
-      description:
-        "The pinnacle of luxury limousines for the most discerning clients.",
-    },
     {
       id: "limo-4",
       type: "LIMOUSINE",
