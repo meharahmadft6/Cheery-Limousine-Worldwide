@@ -61,7 +61,7 @@ export default function Footer() {
                 href="https://www.facebook.com/cherrylimousines/photos/?ref=page_internal&_rdr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center hover:bg-yellow-400 transition-colors duration-300"
+                className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-yellow-400 transition-colors duration-300"
               >
                 <svg
                   className="w-5 h-5"
