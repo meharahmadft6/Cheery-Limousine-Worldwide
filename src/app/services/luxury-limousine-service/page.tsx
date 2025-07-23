@@ -1,6 +1,6 @@
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
-import Image from 'next/image'
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import Image from "next/image";
 
 export default function LuxuryServicePage() {
   return (
@@ -11,7 +11,7 @@ export default function LuxuryServicePage() {
       </div>
 
       <Navbar />
-      
+
       <main className="pt-32 pb-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
         <section className="mb-16">
@@ -22,16 +22,17 @@ export default function LuxuryServicePage() {
               </span>
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Our signature service for any occasion. Choose from our fleet of premium vehicles for your special event.
+              Our signature service for any occasion. Choose from our fleet of
+              premium vehicles for your special event.
             </p>
           </div>
-          
+
           {/* Full-width hero image with overlay */}
           <div className="relative w-full h-64 md:h-96 lg:h-[500px] rounded-xl overflow-hidden mb-12 shadow-xl">
-            <Image 
-              src="/limo4.jpg" 
-              alt="Luxury limousine service" 
-              fill 
+            <Image
+              src="/limo4.jpg"
+              alt="Luxury limousine service"
+              fill
               className="object-cover"
               priority
             />
@@ -41,7 +42,8 @@ export default function LuxuryServicePage() {
                 Experience Unmatched Luxury
               </h2>
               <p className="text-gray-300 max-w-2xl">
-                From corporate events to milestone celebrations, arrive in style with our premium fleet.
+                From corporate events to milestone celebrations, arrive in style
+                with our premium fleet.
               </p>
             </div>
           </div>
@@ -56,17 +58,28 @@ export default function LuxuryServicePage() {
               </h2>
               <div className="space-y-6 text-gray-300">
                 <p>
-                  Elevate any occasion with our premium limousine service. Whether you&#39;re celebrating a special milestone, hosting corporate clients, or simply want to experience luxury transportation, our fleet delivers exceptional comfort and style.
+                  Elevate any occasion with our premium limousine service.
+                  Whether you&#39;re celebrating a special milestone, hosting
+                  corporate clients, or simply want to experience luxury
+                  transportation, our fleet delivers exceptional comfort and
+                  style.
                 </p>
                 <p>
-                  Each vehicle in our luxury collection is meticulously maintained and equipped with premium amenities. Our professional chauffeurs are trained to provide discreet, white-glove service that exceeds expectations.
+                  Each vehicle in our luxury collection is meticulously
+                  maintained and equipped with premium amenities. Our
+                  professional chauffeurs are trained to provide discreet,
+                  white-glove service that exceeds expectations.
                 </p>
                 <p>
-                  From the moment you step into one of our luxury vehicles, you&#39;ll enjoy a first-class experience with attention to every detail. Perfect for weddings, proms, anniversaries, corporate events, or any occasion that deserves special treatment.
+                  From the moment you step into one of our luxury vehicles,
+                  you&#39;ll enjoy a first-class experience with attention to
+                  every detail. Perfect for weddings, proms, anniversaries,
+                  corporate events, or any occasion that deserves special
+                  treatment.
                 </p>
               </div>
             </div>
-            
+
             <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-8">
               <h3 className="text-2xl font-semibold text-yellow-400 mb-6">
                 Premium Features
@@ -74,46 +87,102 @@ export default function LuxuryServicePage() {
               <ul className="space-y-4">
                 <li className="flex items-start">
                   <div className="bg-yellow-500/10 p-2 rounded-lg mr-4">
-                    <svg className="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    <svg
+                      className="w-6 h-6 text-yellow-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M5 13l4 4L19 7"
+                      />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-medium text-white">Complementary Refreshments</h4>
-                    <p className="text-gray-400 text-sm">Chilled bottled water and premium beverages</p>
+                    <h4 className="font-medium text-white">
+                      Complementary Refreshments
+                    </h4>
+                    <p className="text-gray-400 text-sm">
+                      Chilled bottled water and premium beverages
+                    </p>
                   </div>
                 </li>
                 <li className="flex items-start">
                   <div className="bg-yellow-500/10 p-2 rounded-lg mr-4">
-                    <svg className="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    <svg
+                      className="w-6 h-6 text-yellow-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M5 13l4 4L19 7"
+                      />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-medium text-white">Ambient Lighting Control</h4>
-                    <p className="text-gray-400 text-sm">Customizable mood lighting for any occasion</p>
+                    <h4 className="font-medium text-white">
+                      Ambient Lighting Control
+                    </h4>
+                    <p className="text-gray-400 text-sm">
+                      Customizable mood lighting for any occasion
+                    </p>
                   </div>
                 </li>
                 <li className="flex items-start">
                   <div className="bg-yellow-500/10 p-2 rounded-lg mr-4">
-                    <svg className="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    <svg
+                      className="w-6 h-6 text-yellow-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M5 13l4 4L19 7"
+                      />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-medium text-white">Premium Sound System</h4>
-                    <p className="text-gray-400 text-sm">High-fidelity audio with Bluetooth connectivity</p>
+                    <h4 className="font-medium text-white">
+                      Premium Sound System
+                    </h4>
+                    <p className="text-gray-400 text-sm">
+                      High-fidelity audio with Bluetooth connectivity
+                    </p>
                   </div>
                 </li>
                 <li className="flex items-start">
                   <div className="bg-yellow-500/10 p-2 rounded-lg mr-4">
-                    <svg className="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    <svg
+                      className="w-6 h-6 text-yellow-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M5 13l4 4L19 7"
+                      />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-medium text-white">Professional Chauffeurs</h4>
-                    <p className="text-gray-400 text-sm">Discreet, experienced drivers in formal attire</p>
+                    <h4 className="font-medium text-white">
+                      Professional Chauffeurs
+                    </h4>
+                    <p className="text-gray-400 text-sm">
+                      Discreet, experienced drivers in formal attire
+                    </p>
                   </div>
                 </li>
               </ul>
@@ -130,27 +199,31 @@ export default function LuxuryServicePage() {
             {[
               {
                 name: "Executive Limousine",
-                description: "Classic stretch limousine with premium leather interiors",
+                description:
+                  "Classic stretch limousine with premium leather interiors",
                 capacity: "8-10 passengers",
-                image: "/limo7.jpg"
+                image: "/limo7.jpg",
               },
               {
                 name: "Luxury Party Bus",
                 description: "Spacious mobile lounge for larger groups",
                 capacity: "12-16 passengers",
-                image: "/party3.jpg"
+                image: "/party3.jpg",
               },
               {
                 name: "Premium SUV Limo",
                 description: "Modern luxury with the comfort of an SUV",
                 capacity: "6-8 passengers",
-                image: "/suv-limousine.webp"
-              }
+                image: "/suv-limousine.webp",
+              },
             ].map((vehicle, index) => (
-              <div key={index} className="bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:border-yellow-500/50 transition-all duration-300">
+              <div
+                key={index}
+                className="bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:border-yellow-500/50 transition-all duration-300"
+              >
                 <div className="relative h-48">
-                  <Image 
-                    src={vehicle.image} 
+                  <Image
+                    src={vehicle.image}
                     alt={vehicle.name}
                     fill
                     className="object-cover"
@@ -158,11 +231,23 @@ export default function LuxuryServicePage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-2">{vehicle.name}</h3>
+                  <h3 className="text-xl font-bold text-white mb-2">
+                    {vehicle.name}
+                  </h3>
                   <p className="text-gray-300 mb-4">{vehicle.description}</p>
                   <div className="flex items-center text-yellow-400">
-                    <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                    <svg
+                      className="w-5 h-5 mr-2"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                      />
                     </svg>
                     <span>{vehicle.capacity}</span>
                   </div>
@@ -175,11 +260,19 @@ export default function LuxuryServicePage() {
         {/* Testimonial */}
         <section className="mb-20 bg-gradient-to-r from-yellow-900/30 to-black/50 p-8 rounded-2xl border border-yellow-500/20">
           <div className="max-w-3xl mx-auto text-center">
-            <svg className="w-10 h-10 text-yellow-500 mx-auto mb-6" fill="currentColor" viewBox="0 0 24 24">
+            <svg
+              className="w-10 h-10 text-yellow-500 mx-auto mb-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
               <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
             </svg>
             <blockquote className="text-xl italic text-white mb-6">
-              &quot;We booked Cherry Limousine for our anniversary celebration and it was absolutely perfect! The limousine was spotless, the champagne was chilled, and our driver made the entire experience magical. The ambient lighting set the perfect mood for our special night out.&quot;
+              &quot;We booked Cherry Limousine for our anniversary celebration
+              and it was absolutely perfect! The limousine was spotless, the
+              champagne was chilled, and our driver made the entire experience
+              magical. The ambient lighting set the perfect mood for our special
+              night out.&quot;
             </blockquote>
             <div className="text-yellow-400 font-bold">— James & Sophia</div>
             <div className="text-yellow-300 text-sm">San Francisco, CA</div>
@@ -188,22 +281,25 @@ export default function LuxuryServicePage() {
 
         {/* CTA Section */}
         <section className="text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">Ready to Experience Luxury?</h2>
+          <h2 className="text-3xl font-bold text-white mb-6">
+            Ready to Experience Luxury?
+          </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
-            Reserve your premium limousine today for an unforgettable experience.
+            Reserve your premium limousine today for an unforgettable
+            experience.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a 
-              href="/reservation" 
+            <a
+              href="/reservation"
               className="bg-yellow-600 hover:bg-yellow-500 text-black px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 shadow-lg hover:shadow-yellow-500/30"
             >
               Book Luxury Service
             </a>
-            <a 
-              href="tel:+tel:+14156518239" 
+            <a
+              href="tel:+tel:+14156512290"
               className="border border-yellow-500 text-yellow-500 hover:bg-yellow-500/10 px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300"
             >
-              Call Now: +1 (415) 651-8239s
+              Call Now: +1 (415) 651-2290
             </a>
           </div>
         </section>
@@ -211,5 +307,5 @@ export default function LuxuryServicePage() {
 
       <Footer />
     </div>
-  )
+  );
 }

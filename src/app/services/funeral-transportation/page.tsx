@@ -1,6 +1,6 @@
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
-import Image from 'next/image'
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import Image from "next/image";
 
 export default function FuneralServicePage() {
   return (
@@ -11,7 +11,7 @@ export default function FuneralServicePage() {
       </div>
 
       <Navbar />
-      
+
       <main className="pt-32 pb-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
         <section className="mb-16">
@@ -22,16 +22,17 @@ export default function FuneralServicePage() {
               </span>
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Providing dignified, respectful transportation during life&#39;s most difficult moments with the utmost care and professionalism.
+              Providing dignified, respectful transportation during life&#39;s
+              most difficult moments with the utmost care and professionalism.
             </p>
           </div>
-          
+
           {/* Full-width hero image with overlay */}
           <div className="relative w-full h-64 md:h-96 lg:h-[500px] rounded-xl overflow-hidden mb-12 shadow-xl">
-            <Image 
-              src="/funeral.jpg" 
-              alt="Funeral transportation service" 
-              fill 
+            <Image
+              src="/funeral.jpg"
+              alt="Funeral transportation service"
+              fill
               className="object-fit"
               priority
             />
@@ -41,7 +42,8 @@ export default function FuneralServicePage() {
                 Compassionate Service When You Need It Most
               </h2>
               <p className="text-gray-300 max-w-2xl">
-                Our professional chauffeurs are trained to provide discreet, respectful transportation during funeral services.
+                Our professional chauffeurs are trained to provide discreet,
+                respectful transportation during funeral services.
               </p>
             </div>
           </div>
@@ -56,17 +58,27 @@ export default function FuneralServicePage() {
               </h2>
               <div className="space-y-6 text-gray-300">
                 <p>
-                  During times of loss, transportation should be the least of your concerns. Our funeral transportation service provides a seamless, dignified experience for families and mourners, allowing you to focus on what truly matters.
+                  During times of loss, transportation should be the least of
+                  your concerns. Our funeral transportation service provides a
+                  seamless, dignified experience for families and mourners,
+                  allowing you to focus on what truly matters.
                 </p>
                 <p>
-                  We specialize in providing respectful, private transportation for funeral processions, memorial services, and cemetery visits throughout the Bay Area. Our professional chauffeurs are trained to handle these sensitive situations with the utmost care and discretion.
+                  We specialize in providing respectful, private transportation
+                  for funeral processions, memorial services, and cemetery
+                  visits throughout the Bay Area. Our professional chauffeurs
+                  are trained to handle these sensitive situations with the
+                  utmost care and discretion.
                 </p>
                 <p>
-                  Whether you need transportation for immediate family, extended family and friends, or the entire funeral procession, we can accommodate groups of all sizes with our fleet of luxury vehicles.
+                  Whether you need transportation for immediate family, extended
+                  family and friends, or the entire funeral procession, we can
+                  accommodate groups of all sizes with our fleet of luxury
+                  vehicles.
                 </p>
               </div>
             </div>
-            
+
             <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-8">
               <h3 className="text-2xl font-semibold text-yellow-400 mb-6">
                 Service Features
@@ -74,46 +86,101 @@ export default function FuneralServicePage() {
               <ul className="space-y-4">
                 <li className="flex items-start">
                   <div className="bg-yellow-500/10 p-2 rounded-lg mr-4">
-                    <svg className="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    <svg
+                      className="w-6 h-6 text-yellow-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M5 13l4 4L19 7"
+                      />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-medium text-white">Privacy Partitions</h4>
-                    <p className="text-gray-400 text-sm">Discreet separation between chauffeur and passengers for privacy</p>
+                    <h4 className="font-medium text-white">
+                      Privacy Partitions
+                    </h4>
+                    <p className="text-gray-400 text-sm">
+                      Discreet separation between chauffeur and passengers for
+                      privacy
+                    </p>
                   </div>
                 </li>
                 <li className="flex items-start">
                   <div className="bg-yellow-500/10 p-2 rounded-lg mr-4">
-                    <svg className="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    <svg
+                      className="w-6 h-6 text-yellow-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M5 13l4 4L19 7"
+                      />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-medium text-white">Flower Arrangements</h4>
-                    <p className="text-gray-400 text-sm">Optional floral arrangements to honor your loved one</p>
+                    <h4 className="font-medium text-white">
+                      Flower Arrangements
+                    </h4>
+                    <p className="text-gray-400 text-sm">
+                      Optional floral arrangements to honor your loved one
+                    </p>
                   </div>
                 </li>
                 <li className="flex items-start">
                   <div className="bg-yellow-500/10 p-2 rounded-lg mr-4">
-                    <svg className="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    <svg
+                      className="w-6 h-6 text-yellow-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M5 13l4 4L19 7"
+                      />
                     </svg>
                   </div>
                   <div>
                     <h4 className="font-medium text-white">Spacious Seating</h4>
-                    <p className="text-gray-400 text-sm">Comfortable accommodations for families traveling together</p>
+                    <p className="text-gray-400 text-sm">
+                      Comfortable accommodations for families traveling together
+                    </p>
                   </div>
                 </li>
                 <li className="flex items-start">
                   <div className="bg-yellow-500/10 p-2 rounded-lg mr-4">
-                    <svg className="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    <svg
+                      className="w-6 h-6 text-yellow-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M5 13l4 4L19 7"
+                      />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-medium text-white">Procession Coordination</h4>
-                    <p className="text-gray-400 text-sm">Assistance with funeral procession logistics</p>
+                    <h4 className="font-medium text-white">
+                      Procession Coordination
+                    </h4>
+                    <p className="text-gray-400 text-sm">
+                      Assistance with funeral procession logistics
+                    </p>
                   </div>
                 </li>
               </ul>
@@ -130,27 +197,33 @@ export default function FuneralServicePage() {
             {[
               {
                 name: "Executive Sedan",
-                description: "Discreet, comfortable transportation for small families or individuals",
+                description:
+                  "Discreet, comfortable transportation for small families or individuals",
                 capacity: "2-3 passengers",
-                image: "/sedan.jpg"
+                image: "/sedan.jpg",
               },
               {
                 name: "Luxury SUV",
-                description: "Spacious accommodations for immediate family members",
+                description:
+                  "Spacious accommodations for immediate family members",
                 capacity: "5-6 passengers",
-                image: "/suv.jpeg"
+                image: "/suv.jpeg",
               },
               {
                 name: "Limousine",
-                description: "Dignified transportation for larger family groups",
+                description:
+                  "Dignified transportation for larger family groups",
                 capacity: "8-10 passengers",
-                image: "/limo7.jpg"
-              }
+                image: "/limo7.jpg",
+              },
             ].map((vehicle, index) => (
-              <div key={index} className="bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:border-yellow-500/50 transition-all duration-300">
+              <div
+                key={index}
+                className="bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:border-yellow-500/50 transition-all duration-300"
+              >
                 <div className="relative h-48">
-                  <Image 
-                    src={vehicle.image} 
+                  <Image
+                    src={vehicle.image}
                     alt={vehicle.name}
                     fill
                     className="object-cover"
@@ -158,11 +231,23 @@ export default function FuneralServicePage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-2">{vehicle.name}</h3>
+                  <h3 className="text-xl font-bold text-white mb-2">
+                    {vehicle.name}
+                  </h3>
                   <p className="text-gray-300 mb-4">{vehicle.description}</p>
                   <div className="flex items-center text-yellow-400">
-                    <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                    <svg
+                      className="w-5 h-5 mr-2"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                      />
                     </svg>
                     <span>{vehicle.capacity}</span>
                   </div>
@@ -175,40 +260,54 @@ export default function FuneralServicePage() {
         {/* Testimonial */}
         <section className="mb-20 bg-gradient-to-r from-yellow-900/30 to-black/50 p-8 rounded-2xl border border-yellow-500/20">
           <div className="max-w-3xl mx-auto text-center">
-            <svg className="w-10 h-10 text-yellow-500 mx-auto mb-6" fill="currentColor" viewBox="0 0 24 24">
+            <svg
+              className="w-10 h-10 text-yellow-500 mx-auto mb-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
               <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
             </svg>
             <blockquote className="text-xl italic text-white mb-6">
-              &quot;During our family&#39;s difficult time, Cherry Limousine provided exceptional service. Their chauffeur was compassionate, professional, and handled everything with perfect discretion. The vehicle was immaculate and arrived exactly on time, allowing us to focus on honoring our loved one.&quot;
+              &quot;During our family&#39;s difficult time, Cherry Limousine
+              provided exceptional service. Their chauffeur was compassionate,
+              professional, and handled everything with perfect discretion. The
+              vehicle was immaculate and arrived exactly on time, allowing us to
+              focus on honoring our loved one.&quot;
             </blockquote>
-            <div className="text-yellow-400 font-bold">— The Johnson Family</div>
+            <div className="text-yellow-400 font-bold">
+              — The Johnson Family
+            </div>
             <div className="text-yellow-300 text-sm">San Francisco, CA</div>
           </div>
         </section>
 
         {/* CTA Section */}
         <section className="text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">Ready to Arrange Transportation?</h2>
+          <h2 className="text-3xl font-bold text-white mb-6">
+            Ready to Arrange Transportation?
+          </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
-            Our compassionate team is available 24/7 to assist with funeral transportation needs.
+            Our compassionate team is available 24/7 to assist with funeral
+            transportation needs.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a 
-              href="/reservation" 
+            <a
+              href="/reservation"
               className="bg-yellow-600 hover:bg-yellow-500 text-black px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 shadow-lg hover:shadow-yellow-500/30"
             >
               Request Funeral Transportation
             </a>
-            <a 
-              href="tel:+14156518239" 
+            <a
+              href="tel:+14156512290"
               className="border border-yellow-500 text-yellow-500 hover:bg-yellow-500/10 px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300"
             >
-              Call Now: +1 (415) 651-8239            </a>
+              Call Now: +1 (415) 651-2290{" "}
+            </a>
           </div>
         </section>
       </main>
 
       <Footer />
     </div>
-  )
+  );
 }

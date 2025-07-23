@@ -96,24 +96,39 @@ export default function PrivacyPolicy() {
                 Safety & Security Commitment
               </h2>
               <p className="mb-6">
-                At Cherry Limousine Worldwide, we prioritize your safety with comprehensive measures:
+                At Cherry Limousine Worldwide, we prioritize your safety with
+                comprehensive measures:
               </p>
               <ul className="mb-6 space-y-4">
                 <li className="flex items-start">
                   <span className="text-yellow-500 mr-2">✓</span>
-                  <span><strong>Expert Chauffeurs:</strong> Highly trained professionals with extensive Bay Area knowledge and impeccable safety records</span>
+                  <span>
+                    <strong>Expert Chauffeurs:</strong> Highly trained
+                    professionals with extensive Bay Area knowledge and
+                    impeccable safety records
+                  </span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-yellow-500 mr-2">✓</span>
-                  <span><strong>Vehicle Excellence:</strong> Rigorous pre-trip inspections, advanced safety systems, and premium sanitization protocols</span>
+                  <span>
+                    <strong>Vehicle Excellence:</strong> Rigorous pre-trip
+                    inspections, advanced safety systems, and premium
+                    sanitization protocols
+                  </span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-yellow-500 mr-2">✓</span>
-                  <span><strong>Data Protection:</strong> Military-grade encryption for all transactions and confidential information</span>
+                  <span>
+                    <strong>Data Protection:</strong> Military-grade encryption
+                    for all transactions and confidential information
+                  </span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-yellow-500 mr-2">✓</span>
-                  <span><strong>Workplace Standards:</strong> Strict drug-free policy with thorough background checks for all team members</span>
+                  <span>
+                    <strong>Workplace Standards:</strong> Strict drug-free
+                    policy with thorough background checks for all team members
+                  </span>
                 </li>
               </ul>
             </motion.div>
@@ -124,12 +139,18 @@ export default function PrivacyPolicy() {
                 Privacy Protection
               </h2>
               <p className="mb-6">
-                We handle your personal information with the utmost care and security:
+                We handle your personal information with the utmost care and
+                security:
               </p>
               <ul className="mb-6 space-y-2">
                 <li>Only collect essential data for service provision</li>
-                <li>Employ end-to-end encryption for all digital communications</li>
-                <li>Never share your information with third parties without consent</li>
+                <li>
+                  Employ end-to-end encryption for all digital communications
+                </li>
+                <li>
+                  Never share your information with third parties without
+                  consent
+                </li>
                 <li>Provide full transparency about data usage</li>
               </ul>
             </motion.div>
@@ -141,19 +162,35 @@ export default function PrivacyPolicy() {
               </h2>
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-xl font-semibold text-yellow-400 mb-2">Standard Reservations</h3>
-                  <p>24-48 hour cancellation notice required for hourly charters or point-to-point services</p>
+                  <h3 className="text-xl font-semibold text-yellow-400 mb-2">
+                    Standard Reservations
+                  </h3>
+                  <p>
+                    24-48 hour cancellation notice required for hourly charters
+                    or point-to-point services
+                  </p>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-yellow-400 mb-2">Special Events</h3>
-                  <p>72 hour cancellation notice required for weddings, birthdays, and other celebrations</p>
+                  <h3 className="text-xl font-semibold text-yellow-400 mb-2">
+                    Special Events
+                  </h3>
+                  <p>
+                    72 hour cancellation notice required for weddings,
+                    birthdays, and other celebrations
+                  </p>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-yellow-400 mb-2">Airport Transfers</h3>
+                  <h3 className="text-xl font-semibold text-yellow-400 mb-2">
+                    Airport Transfers
+                  </h3>
                   <p>Free cancellations permitted before vehicle dispatch</p>
                 </div>
                 <div className="bg-gray-900 p-4 rounded-lg">
-                  <p className="font-medium">Contact our dispatch center at <span className="text-yellow-400">+1 (415) 651-8239s</span> for any changes or assistance</p>
+                  <p className="font-medium">
+                    Contact our dispatch center at{" "}
+                    <span className="text-yellow-400">+1 (415) 651-2290</span>{" "}
+                    for any changes or assistance
+                  </p>
                 </div>
               </div>
             </motion.div>
@@ -166,45 +203,72 @@ export default function PrivacyPolicy() {
               <div className="grid gap-6">
                 <div className="bg-gray-900/50 p-5 rounded-lg border-l-4 border-yellow-500">
                   <h3 className="text-xl font-semibold mb-2">No-Show Policy</h3>
-                  <p>Clients who fail to appear at the pickup location without notification will be charged the full trip amount including gratuity.</p>
+                  <p>
+                    Clients who fail to appear at the pickup location without
+                    notification will be charged the full trip amount including
+                    gratuity.
+                  </p>
                 </div>
-                
+
                 <div className="bg-gray-900/50 p-5 rounded-lg border-l-4 border-yellow-500">
                   <h3 className="text-xl font-semibold mb-2">Payment Terms</h3>
                   <ul className="space-y-2">
-                    <li>We accept all major credit cards (Visa®, MasterCard®, American Express®, Discover®)</li>
+                    <li>
+                      We accept all major credit cards (Visa®, MasterCard®,
+                      American Express®, Discover®)
+                    </li>
                     <li>50% deposit required for card reservations</li>
-                    <li>Cash payments must be made in person at time of service</li>
+                    <li>
+                      Cash payments must be made in person at time of service
+                    </li>
                   </ul>
                 </div>
-                
+
                 <div className="bg-gray-900/50 p-5 rounded-lg border-l-4 border-yellow-500">
-                  <h3 className="text-xl font-semibold mb-2">Wait Time Charges</h3>
+                  <h3 className="text-xl font-semibold mb-2">
+                    Wait Time Charges
+                  </h3>
                   <ul className="space-y-2">
-                    <li>15-minute complimentary grace period for all pickups</li>
-                    <li>Additional wait time billed in 30-minute increments at vehicles hourly rate</li>
+                    <li>
+                      15-minute complimentary grace period for all pickups
+                    </li>
+                    <li>
+                      Additional wait time billed in 30-minute increments at
+                      vehicles hourly rate
+                    </li>
                   </ul>
                 </div>
-                
+
                 <div className="bg-gray-900/50 p-5 rounded-lg border-l-4 border-yellow-500">
                   <h3 className="text-xl font-semibold mb-2">Extra Stops</h3>
                   <ul className="space-y-2">
-                    <li>Unscheduled stops incur $15-$50+ charges based on distance</li>
+                    <li>
+                      Unscheduled stops incur $15-$50+ charges based on distance
+                    </li>
                     <li>Please specify all required stops during booking</li>
                   </ul>
                 </div>
-                
+
                 <div className="bg-gray-900/50 p-5 rounded-lg border-l-4 border-yellow-500">
-                  <h3 className="text-xl font-semibold mb-2">Late Night/Early Morning</h3>
-                  <p>Trips between 11:00 PM - 6:00 AM include a $15-$25 surcharge based on duration and distance.</p>
+                  <h3 className="text-xl font-semibold mb-2">
+                    Late Night/Early Morning
+                  </h3>
+                  <p>
+                    Trips between 11:00 PM - 6:00 AM include a $15-$25 surcharge
+                    based on duration and distance.
+                  </p>
                 </div>
-                
+
                 <div className="bg-gray-900/50 p-5 rounded-lg border-l-4 border-yellow-500">
-                  <h3 className="text-xl font-semibold mb-2">Non-Smoking Policy</h3>
+                  <h3 className="text-xl font-semibold mb-2">
+                    Non-Smoking Policy
+                  </h3>
                   <ul className="space-y-2">
                     <li>Strictly enforced in all vehicles</li>
                     <li>$100 cleaning fee for violations</li>
-                    <li>Chauffeurs will accommodate smoke breaks at safe locations</li>
+                    <li>
+                      Chauffeurs will accommodate smoke breaks at safe locations
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -216,10 +280,14 @@ export default function PrivacyPolicy() {
                 Contact Our Team
               </h2>
               <div className="bg-gray-900 p-6 rounded-lg">
-                <p className="font-bold text-yellow-500">Cherry Limousine Worldwide</p>
-                <p>Dispatch: +1 (415) 651-8239</p>
+                <p className="font-bold text-yellow-500">
+                  Cherry Limousine Worldwide
+                </p>
+                <p>Dispatch: +1 (415) 651-2290</p>
                 <p>Available 24/7 for your transportation needs</p>
-                <p className="mt-4">Policy Effective Date: {new Date().toLocaleDateString()}</p>
+                <p className="mt-4">
+                  Policy Effective Date: {new Date().toLocaleDateString()}
+                </p>
               </div>
             </motion.div>
           </motion.div>

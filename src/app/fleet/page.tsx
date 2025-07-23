@@ -6,7 +6,14 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 type Vehicle = {
   id: string;
-  type: "SEDAN" | "SUV" | "LIMOUSINE" | "SHUTTLE BUS" | "PARTY BUS"| "COACH";
+  type:
+    | "SEDAN"
+    | "SUV"
+    | "LIMOUSINE"
+    | "SHUTTLE BUS"
+    | "PARTY BUS"
+    | "COACH"
+    | "SPRINTER";
   name: string;
   imageUrl: string;
   passengerCapacity: number;
@@ -36,10 +43,10 @@ const FleetPage = () => {
     {
       id: "sedan-2",
       type: "SEDAN",
-      name: "BMW 7 Series",
-      imageUrl: "/bmw.webp",
-      passengerCapacity: 3,
-      luggageCapacity: 3,
+      name: "Executive Sedan",
+      imageUrl: "/executive-sedan.jpg",
+      passengerCapacity: 2,
+      luggageCapacity: 2,
       features: ["Executive lounge", "Gesture control", "Sky lounge roof"],
       description:
         "Sophisticated design meets innovative technology for the ultimate driving experience.",
@@ -62,7 +69,11 @@ const FleetPage = () => {
       imageUrl: "/bmw.webp",
       passengerCapacity: 3,
       luggageCapacity: 2,
-      features: ["Dynamic handling", "iDrive infotainment", "Harman Kardon audio"],
+      features: [
+        "Dynamic handling",
+        "iDrive infotainment",
+        "Harman Kardon audio",
+      ],
       description:
         "A perfect blend of performance and business-class luxury, ideal for executive rides.",
     },
@@ -73,7 +84,11 @@ const FleetPage = () => {
       imageUrl: "/benz.jpg",
       passengerCapacity: 3,
       luggageCapacity: 2,
-      features: ["MBUX interface", "Ambient lighting", "Agility control suspension"],
+      features: [
+        "MBUX interface",
+        "Ambient lighting",
+        "Agility control suspension",
+      ],
       description:
         "Smart, elegant, and intuitive — a true executive’s choice for smooth city rides.",
     },
@@ -84,7 +99,11 @@ const FleetPage = () => {
       imageUrl: "/lexas.jpg",
       passengerCapacity: 3,
       luggageCapacity: 3,
-      features: ["Mark Levinson audio", "Ottoman rear seats", "Climate concierge"],
+      features: [
+        "Mark Levinson audio",
+        "Ottoman rear seats",
+        "Climate concierge",
+      ],
       description:
         "Japanese craftsmanship with ultra-luxury comfort and advanced hybrid efficiency.",
     },
@@ -95,7 +114,11 @@ const FleetPage = () => {
       imageUrl: "/genesis.avif",
       passengerCapacity: 3,
       luggageCapacity: 3,
-      features: ["Nappa leather", "Driver attention warning", "Lexicon premium audio"],
+      features: [
+        "Nappa leather",
+        "Driver attention warning",
+        "Lexicon premium audio",
+      ],
       description:
         "A rising luxury icon, combining elegance, intelligence, and next-gen technology.",
     },
@@ -106,11 +129,14 @@ const FleetPage = () => {
       imageUrl: "/jaguar.jpg",
       passengerCapacity: 3,
       luggageCapacity: 2,
-      features: ["Panoramic sunroof", "Meridian sound system", "Adaptive dynamics"],
+      features: [
+        "Panoramic sunroof",
+        "Meridian sound system",
+        "Adaptive dynamics",
+      ],
       description:
         "A bold British statement in luxury, performance, and distinctive design.",
-    }
-,
+    },
     // SUVs
     {
       id: "suv-1",
@@ -152,38 +178,26 @@ const FleetPage = () => {
       ],
       description:
         "The S-Class of SUVs offering first-class comfort in every seat.",
-    }, {
+    },
+    {
       id: "suv-4",
       type: "SUV",
-      name: "Range Rover Autobiography",
-      imageUrl: "/range.jpg",
-      passengerCapacity: 4,
-      luggageCapacity: 4,
+      name: "Executive SUV",
+      imageUrl: "/executive-suv.webp",
+      passengerCapacity: 6,
+      luggageCapacity: 6,
       features: [
-        "Panoramic sunroof",
+        "All leather interior",
         "Meridian sound system",
         "All-terrain response",
+        "Tinted Windows",
       ],
       description:
         "A blend of luxury and off-road capability, perfect for urban and adventurous drives alike.",
-    },{
-      id: "suv-4",
-      type: "SUV",
-      name: "BMW X7",
-      imageUrl: "/bmwx5.avif",
-      passengerCapacity: 5,
-      luggageCapacity: 4,
-      features: [
-        "Crystal gear selector",
-        "BMW iDrive 8",
-        "Captain’s chairs",
-      ],
-      description:
-        "A premium 3-row SUV blending elegance, performance, and space for all.",
     },
 
     // Limousines
-  
+
     {
       id: "limo-2",
       type: "LIMOUSINE",
@@ -206,11 +220,25 @@ const FleetPage = () => {
       description:
         "The pinnacle of luxury limousines for the most discerning clients.",
     },
-  
-    // Shuttle Buses
+    {
+      id: "limo-4",
+      type: "LIMOUSINE",
+      name: "Cadillac Escalade Limousine",
+      imageUrl: "/cadillac-escalade-limousine.jpg",
+      passengerCapacity: 6,
+      luggageCapacity: 5,
+      features: [
+        "Spacious interior",
+        "Premium leather seating",
+        "Advanced infotainment system",
+      ],
+      description:
+        "A bold and luxurious SUV limousine that blends power with first-class comfort.",
+    },
+
     {
       id: "shuttle-1",
-      type: "SHUTTLE BUS",
+      type: "SPRINTER",
       name: "Mercedes-Benz Sprinter",
       imageUrl: "/sprinter.avif",
       passengerCapacity: 14,
@@ -221,27 +249,42 @@ const FleetPage = () => {
     },
     {
       id: "shuttle-2",
-      type: "SHUTTLE BUS",
-      name: "Ford Transit",
-      imageUrl: "/ford.jpg",
-      passengerCapacity: 12,
-      luggageCapacity: 10,
-      features: ["Spacious interior", "Climate control", "WiFi available"],
-      description: "Versatile shuttle for airport transfers and group outings.",
+      type: "SPRINTER",
+      name: "Executive Sprinter",
+      imageUrl: "/sprinter1.jpg",
+      passengerCapacity: 13,
+      luggageCapacity: 13,
+      features: [
+        "Spacious interior",
+        "Climate control",
+        "WiFi available",
+        "All leather interior",
+        "Flat Screen TV and Bluetooth Sound System",
+      ],
+      description:
+        "Our executive sprinter are all equipped with amenities for you and seats up to 13 passengers and 13 pieces of luggage.",
+    },
+    {
+      id: "shuttle-3",
+      type: "SPRINTER",
+      name: "Jet Sprinter",
+      imageUrl: "/sprinter3.webp",
+      passengerCapacity: 8,
+      luggageCapacity: 8,
+      features: [
+        "Spacious interior",
+        "Climate control",
+        "Quiet and secure ride",
+        "WiFi available",
+        "All leather interior",
+        "Flat Screen TV and Bluetooth Sound System",
+        "All white leather interior",
+      ],
+      description:
+        "Our jet sprinter are all equipped with amenities for you and seats up to 8 passengers.",
     },
 
     // Party Buses
-    {
-      id: "party-1",
-      type: "PARTY BUS",
-      name: "Elite Party Coach",
-      imageUrl: "/elite.jpg",
-      passengerCapacity: 25,
-      luggageCapacity: 10,
-      features: ["Dance floor", "Premium sound", "LED lighting", "Bar area"],
-      description:
-        "The ultimate mobile party venue with all the amenities for celebration.",
-    },
     {
       id: "party-2",
       type: "PARTY BUS",
@@ -261,8 +304,42 @@ const FleetPage = () => {
     {
       id: "coach-1",
       type: "COACH",
+      name: "Executive Bus 23 Passenger",
+      imageUrl: "/23.webp", // You can replace this with an actual image URL
+      passengerCapacity: 23,
+      luggageCapacity: 23,
+      features: [
+        "Reclining leather seats",
+        "Onboard restroom",
+        "Complimentary Wi-Fi and water",
+        "Climate control",
+        "PA & entertainment system",
+      ],
+      description:
+        "Our executive buses are fully equipped with premium amenities and comfortably accommodate up to 23 passengers along with 23 pieces of luggage, ensuring a smooth and luxurious journey.",
+    },
+    {
+      id: "coach-2",
+      type: "COACH",
+      name: "Executive Bus 38 Passenger",
+      imageUrl: "/38.webp", // You can replace this with an actual image URL
+      passengerCapacity: 38,
+      luggageCapacity: 38,
+      features: [
+        "Reclining leather seats",
+        "Onboard restroom",
+        "Complimentary Wi-Fi and water",
+        "Climate control",
+        "PA & entertainment system",
+      ],
+      description:
+        "Our executive buses are fully equipped with premium amenities and comfortably accommodate up to 38 passengers along with 38 pieces of luggage, ensuring a smooth and luxurious journey.",
+    },
+    {
+      id: "coach-3",
+      type: "COACH",
       name: "56 Pax Luxury Motorcoach",
-      imageUrl: "/Ccoach.webp", // You can replace this with an actual image URL
+      imageUrl: "/56.png", // You can replace this with an actual image URL
       passengerCapacity: 56,
       luggageCapacity: 56,
       features: [
@@ -273,18 +350,18 @@ const FleetPage = () => {
         "PA & entertainment system",
       ],
       description:
-        "Spacious and luxurious 56-passenger motorcoach designed for group travel, ensuring comfort, safety, and convenience on long journeys or corporate events."
-    }
-    
+        "Spacious and luxurious 56-passenger motorcoach designed for group travel, ensuring comfort, safety, and convenience on long journeys or corporate events.",
+    },
   ];
 
   const vehicleTypes = [
     "SEDAN",
     "SUV",
+    "SPRINTER",
     "LIMOUSINE",
     "SHUTTLE BUS",
-    "PARTY BUS",
     "COACH",
+    "PARTY BUS",
   ] as const;
 
   const containerVariants = {
@@ -316,10 +393,10 @@ const FleetPage = () => {
       <div className="relative h-96 md:h-screen w-full overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-yellow-900/70 z-10" />
         <Image
-          src="/audi.avif"
+          src="/limo9.jpg"
           alt="Luxury Fleet"
           fill
-          className="object-cover"
+          className="object-fit"
           priority
           sizes="100vw"
         />
@@ -345,35 +422,6 @@ const FleetPage = () => {
           </motion.p>
         </div>
       </div>
-
-      {/* Fleet Navigation */}
-      <motion.div
-        className="sticky top-0 bg-black border-b border-yellow-900 z-20 "
-        initial={{ y: -50 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        <div className="container mx-auto px-6">
-          <motion.div
-            className="flex justify-center overflow-x-auto py-4 space-x-8"
-            initial="hidden"
-            animate="visible"
-            variants={containerVariants}
-          >
-            {vehicleTypes.map((type) => (
-              <motion.a
-                key={type}
-                href={`#${type.toLowerCase().replace(" ", "-")}`}
-                className="whitespace-nowrap text-lg font-medium text-gray-300 hover:text-yellow-500 transition-colors"
-                variants={itemVariants}
-                whileHover={{ scale: 1.05 }}
-              >
-                {type}
-              </motion.a>
-            ))}
-          </motion.div>
-        </div>
-      </motion.div>
 
       {/* Fleet Sections */}
       <div className="container mx-auto px-4 py-12 md:py-20">
@@ -401,7 +449,7 @@ const FleetPage = () => {
               </motion.div>
 
               <motion.div
-                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+                className="grid grid-cols-1 gap-12"
                 variants={containerVariants}
               >
                 {typeVehicles.map((vehicle) => (
@@ -410,76 +458,102 @@ const FleetPage = () => {
                     className="bg-gray-900/50 border border-yellow-800/30 rounded-xl overflow-hidden hover:border-yellow-500/50 transition-all duration-300"
                     variants={itemVariants}
                     whileHover={{
-                      y: -10,
-                      boxShadow:
-                        "0 20px 25px -5px rgba(234, 179, 8, 0.1), 0 10px 10px -5px rgba(234, 179, 8, 0.04)",
+                      y: -5,
+                      boxShadow: "0 10px 15px -3px rgba(234, 179, 8, 0.1)",
                     }}
                   >
-                    <div className="relative h-64 w-full">
-                      <Image
-                        src={vehicle.imageUrl}
-                        alt={vehicle.name}
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-                      <div className="absolute bottom-0 left-0 right-0 p-4">
-                        <h3 className="text-xl font-bold text-white">
-                          {vehicle.name}
-                        </h3>
-                      </div>
-                    </div>
-                    <div className="p-6">
-                      {vehicle.description && (
-                        <p className="text-gray-300 mb-4">
-                          {vehicle.description}
-                        </p>
-                      )}
-                      <div className="flex justify-between mb-6">
-                        <div className="text-yellow-400">
-                          <span className="font-medium">Passengers:</span>{" "}
-                          {vehicle.passengerCapacity}
+                    <div className="flex flex-col md:flex-row">
+                      {/* Image Column - Left Side */}
+                      <motion.div
+                        className="relative h-64 md:h-auto md:w-1/2"
+                        initial={{ x: -20, opacity: 0.9 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 0.6 }}
+                      >
+                        <Image
+                          src={vehicle.imageUrl}
+                          alt={vehicle.name}
+                          fill
+                          className="object-contain"
+                          sizes="(max-width: 768px) 100vw, 50vw"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-transparent md:bg-gradient-to-t md:from-black/70 md:via-transparent md:to-transparent" />
+                      </motion.div>
+
+                      {/* Details Column - Right Side */}
+                      <div className="p-6 md:w-1/2 flex flex-col justify-between">
+                        <div>
+                          <h3 className="text-2xl font-bold text-white mb-2">
+                            {vehicle.name}
+                          </h3>
+
+                          {vehicle.description && (
+                            <p className="text-gray-300 mb-4">
+                              {vehicle.description}
+                            </p>
+                          )}
+
+                          <div className="flex gap-6 mb-6">
+                            <div className="text-yellow-400">
+                              <div className="text-sm text-gray-400">
+                                Passengers
+                              </div>
+                              <div className="text-xl font-bold">
+                                {vehicle.passengerCapacity}
+                              </div>
+                            </div>
+                            <div className="text-yellow-400">
+                              <div className="text-sm text-gray-400">
+                                Luggage
+                              </div>
+                              <div className="text-xl font-bold">
+                                {vehicle.luggageCapacity}
+                              </div>
+                            </div>
+                          </div>
+
+                          {vehicle.features && (
+                            <div className="mb-6">
+                              <h4 className="text-lg font-semibold text-yellow-400 mb-2">
+                                Features
+                              </h4>
+                              <ul className="space-y-2">
+                                {vehicle.features.map((feature, idx) => (
+                                  <li
+                                    key={idx}
+                                    className="flex items-start text-gray-300"
+                                  >
+                                    <svg
+                                      className="w-4 h-4 mt-1 mr-2 text-yellow-500 flex-shrink-0"
+                                      fill="none"
+                                      stroke="currentColor"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth={2}
+                                        d="M5 13l4 4L19 7"
+                                      />
+                                    </svg>
+                                    <span>{feature}</span>
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          )}
                         </div>
-                        <div className="text-yellow-400">
-                          <span className="font-medium">Luggage:</span>{" "}
-                          {vehicle.luggageCapacity}
-                        </div>
+
+                        <Link href={"/reservation"}>
+                          <motion.button
+                            className="w-full bg-yellow-600 hover:bg-yellow-500 text-black py-3 px-6 rounded-lg font-bold transition-colors mt-4"
+                            whileHover={{ scale: 1.02 }}
+                            whileTap={{ scale: 0.98 }}
+                          >
+                            Book A Ride
+                          </motion.button>
+                        </Link>
                       </div>
-                      {vehicle.features && (
-                        <ul className="mb-6 space-y-2">
-                          {vehicle.features.map((feature, idx) => (
-                            <li
-                              key={idx}
-                              className="flex items-center text-gray-300"
-                            >
-                              <svg
-                                className="w-4 h-4 mr-2 text-yellow-500"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  strokeWidth={2}
-                                  d="M5 13l4 4L19 7"
-                                />
-                              </svg>
-                              {feature}
-                            </li>
-                          ))}
-                        </ul>
-                      )}
-                      <Link href={"/reservation"}>
-                        <motion.button
-                          className="w-full bg-yellow-600 hover:bg-yellow-500 text-black py-3 px-6 rounded-lg font-bold transition-colors"
-                          whileHover={{ scale: 1.02 }}
-                          whileTap={{ scale: 0.98 }}
-                        >
-                          Reserve This Vehicle
-                        </motion.button>
-                      </Link>
                     </div>
                   </motion.div>
                 ))}
