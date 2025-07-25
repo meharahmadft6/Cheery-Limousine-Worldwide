@@ -25,7 +25,7 @@ type Vehicle = {
 const FleetPage = () => {
   const vehicles: Vehicle[] = [
     // Sedans
-  
+
     {
       id: "sedan-2",
       type: "SEDAN",
@@ -193,7 +193,7 @@ const FleetPage = () => {
       id: "coach-3",
       type: "COACH",
       name: "56 Pax Luxury Motorcoach",
-      imageUrl: "/56.png", // You can replace this with an actual image URL
+      imageUrl: "/coach.png", // You can replace this with an actual image URL
       passengerCapacity: 56,
       luggageCapacity: 56,
       features: [
