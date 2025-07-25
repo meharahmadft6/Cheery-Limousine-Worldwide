@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     "SJC airport transportation",
   ],
   icons: {
-    icon: "/logo-re.png",
+    icon: "/logo-re2.png",
   },
   openGraph: {
     title: "Premium Limo Service San Francisco | Cherry Limousine Worldwide",
@@ -74,7 +74,7 @@ export default function RootLayout({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             name: "Cherry Limousine Worldwide",
-            image: "https://cherrylimousineworldwide.com/logo-re.png",
+            image: "https://cherrylimousineworldwide.com/logo-re1.png",
             "@id": "https://cherrylimousineworldwide.com",
             url: "https://cherrylimousineworldwide.com",
             email: "reservations@cherrylimousineworldwide.com",
