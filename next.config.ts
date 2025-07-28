@@ -1,15 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  output: "export",
   images: {
-    domains: [
-      "images.unsplash.com",
-      "plus.unsplash.com",
-      "images.pexels.com",
-      "upload.wikimedia.org", // ✅ added Wikimedia
-    ],
+    unoptimized: true, // Required for static export
+    // domains won't be used - remove them
   },
-  // other config options
 };
-
 export default nextConfig;
