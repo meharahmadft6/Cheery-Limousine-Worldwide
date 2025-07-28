@@ -125,7 +125,7 @@ export default function ReservationPage() {
                 </h3>
                 <p className="text-gray-300">
                   We guarantee on-time arrivals with 99.7% punctuality across
-                  all our bookings, so you'll never miss an important event.
+                  all our bookings, so you never miss an important event.
                 </p>
               </div>
 
